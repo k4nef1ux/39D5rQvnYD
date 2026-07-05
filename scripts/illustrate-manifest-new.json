@@ -1,0 +1,76 @@
+{
+  "style": {
+    "medium": "photorealistic 3d render, editorial minimal still-life, shallow depth of field",
+    "palette": {
+      "background": "#080807 warm near-black",
+      "accent": "#9cba90 dusted, restrained phosphor green - muted, NOT neon, soft glow only",
+      "neutrals": "warm grey concrete and stone"
+    },
+    "lighting": "low-key cinematic, single soft key light, soft volumetric haze, deep shadows",
+    "mood": "quiet, intelligent, slightly clandestine, premium",
+    "composition": "one clear subject, vast empty dark negative space, generous margins",
+    "forbidden": "no text, no letters, no numbers, no logos, no brand marks, no people, no faces, no clutter, no busy detail"
+  },
+  "posts": [
+    { "slug": "grow-audience-without-social-media", "images": [
+      { "id": "owned", "alt": "a phosphor-green sprout growing from a crack in dark concrete, alone in empty darkness", "scene": "a single small phosphor-green sprout growing out of a crack in dark concrete, alone in vast empty darkness" },
+      { "id": "anchor", "alt": "a green-lit anchor planted in dark stone while faint grey social bubbles drift away into haze", "scene": "a glowing green anchor embedded in dark stone while faint grey speech-bubble shapes drift away and dissolve into haze" },
+      { "id": "network", "alt": "small green light points joined by thin lines converging into one owned bright node", "scene": "a small constellation of green light points joined by thin lines, all converging into one brighter owned node on a dark field" }
+    ]},
+    { "slug": "digital-marketing-for-solopreneurs", "images": [
+      { "id": "desk", "alt": "one green-lit desk lamp glowing over an empty dark desk, vast negative space", "scene": "a single green-lit desk lamp glowing over an empty dark minimal desk, vast negative space around it" },
+      { "id": "funnel", "alt": "three thin green channels of light flowing into one funnel over dark ground", "scene": "three thin streams of green light flowing down into one simple funnel shape over dark ground, minimal" },
+      { "id": "gear", "alt": "one green gear turning in darkness while faint dim gears sit stopped around it", "scene": "a single luminous green gear turning quietly in darkness, a few faint dim grey gears stopped around it" }
+    ]},
+    { "slug": "content-marketing-2026", "images": [
+      { "id": "depth", "alt": "one textured green-lit sheet rising above a sea of flat identical grey sheets fading into dark", "scene": "a single sheet of paper glowing green with real depth and texture, rising above a flat sea of identical grey sheets fading into darkness" },
+      { "id": "carved", "alt": "a wall of generic grey blocks with one block replaced by a luminous hand-carved green stone", "scene": "a cracked grey wall of stacked identical blocks, one block replaced by a luminous green hand-carved stone" },
+      { "id": "beam", "alt": "a quiet green lighthouse beam cutting through dark fog over a still sea", "scene": "a quiet green lighthouse beam cutting through dark fog over a still dark sea, minimal" }
+    ]},
+    { "slug": "how-to-build-a-website-that-makes-money", "images": [
+      { "id": "cornerstone", "alt": "a green-lit cornerstone block being set as the foundation of a dark minimal structure", "scene": "a single green-lit cornerstone block being set as the foundation of a dark minimal architectural structure" },
+      { "id": "blueprint", "alt": "a blueprint drawn in thin green light on dark ground with one clear path highlighted", "scene": "a blueprint drawn in thin green light on dark ground, one clear path through it highlighted brighter" },
+      { "id": "base", "alt": "a small green coin resting on a solid dark architectural base with a faint glow", "scene": "a small green-glowing coin resting on a solid dark architectural base, faint glow, lots of empty space" }
+    ]},
+    { "slug": "best-website-builder-for-bloggers", "images": [
+      { "id": "exit", "alt": "an open green-lit doorway in a dark wall with a clear path leading out", "scene": "an open green-lit doorway in a dark wall with a clear path leading out, suggesting the freedom to leave" },
+      { "id": "blocks", "alt": "modular dark building blocks with green edges neatly assembled, minimal", "scene": "a set of modular dark building blocks with glowing green edges, neatly assembled, minimal, on dark ground" },
+      { "id": "portable", "alt": "a green-light key beside a dark portable case in empty space", "scene": "a single key of green light resting beside a dark portable case, lots of empty dark space" }
+    ]},
+    { "slug": "self-hosted-blog-vs-medium", "images": [
+      { "id": "platforms", "alt": "a crowded bright rented stage beside a solitary green-lit owned platform in darkness", "scene": "two pedestals in darkness - a crowded bright busy rented stage versus a solitary calm green-lit owned platform, minimal" },
+      { "id": "house", "alt": "a green-lit house on its own ground versus a faint apartment window in a distant grey tower", "scene": "a small green-lit house standing on its own dark ground in the foreground, a faint single apartment window glowing in a distant grey tower behind" },
+      { "id": "flag", "alt": "a green flag planted firmly in dark soil, alone", "scene": "a single green-glowing flag planted firmly in dark soil, alone, vast negative space" }
+    ]},
+    { "slug": "is-blogging-worth-it-2026", "images": [
+      { "id": "ember", "alt": "a single green ember still glowing in a field of cold grey ash", "scene": "a single green ember still glowing warmly in a wide field of cold grey ash, dark" },
+      { "id": "growth", "alt": "a slow green plant pushing up through dark cracked earth toward faint light", "scene": "a slow green seedling pushing up through dark cracked earth toward a faint distant light" },
+      { "id": "stairs", "alt": "a long dark staircase with the first steps lit green fading up into darkness", "scene": "a long dark staircase with only the first few steps lit green, the rest fading up into darkness" }
+    ]},
+    { "slug": "legit-ways-to-make-money-online", "images": [
+      { "id": "real", "alt": "a solid green-lit brick beside a hollow glittering grey fake one cracking apart", "scene": "a solid dependable green-lit brick beside a hollow glittering grey fake brick cracking apart, dark background" },
+      { "id": "tools", "alt": "three plain green-lit tools on dark stone, unglamorous", "scene": "three plain unglamorous green-lit hand tools resting on dark stone, plain and simple" },
+      { "id": "path", "alt": "a steady green path of stepping stones across dark water", "scene": "a steady line of green-lit stepping stones crossing dark still water, no shortcuts, minimal" }
+    ]},
+    { "slug": "automate-content-creation", "images": [
+      { "id": "belt", "alt": "a green-lit conveyor belt carrying identical neutral blocks with one hand-finished green block at the end", "scene": "a green-lit conveyor belt in darkness carrying identical plain neutral blocks, with one warmer hand-finished green block at the end" },
+      { "id": "machine", "alt": "a quiet machine of thin green gears and belts with one empty seat at the controls", "scene": "a quiet minimal machine of thin green gears and belts in darkness, one empty seat at the controls" },
+      { "id": "spark", "alt": "a single green spark of an idea entering a dark mechanical pipeline that outputs neat shapes", "scene": "a single bright green spark of an idea entering one end of a dark mechanical pipeline that outputs neat ordered shapes" }
+    ]},
+    { "slug": "ai-agents-for-solopreneurs", "images": [
+      { "id": "direct", "alt": "one central green-lit node directing three faint autonomous worker nodes in the dark", "scene": "one central brighter green-lit node directing three fainter autonomous worker nodes by thin lines, dark field" },
+      { "id": "board", "alt": "a dark chessboard with a single green-lit piece moving several others", "scene": "a dark minimal chessboard where a single green-lit piece directs the movement of several dim pieces" },
+      { "id": "handoff", "alt": "a glowing green task token passing from a bright node to a working node", "scene": "a glowing green task token being handed off from a bright node to a working node across dark space" }
+    ]},
+    { "slug": "what-a-faceless-youtube-channel-costs", "images": [
+      { "id": "cost", "alt": "a dark stack of glowing green subscription chips piling up casting long shadows", "scene": "a tall stack of glowing green subscription chips piling up on dark ground, casting long dramatic shadows" },
+      { "id": "chair", "alt": "an empty green-lit director's chair facing a dark blank screen, vast negative space", "scene": "an empty green-lit director's chair facing a dark blank screen, vast empty negative space" },
+      { "id": "climb", "alt": "a small green play-button glowing at the top of a tall dark climb of steps", "scene": "a small green-glowing play-button shape resting at the top of a tall dark climb of rough steps" }
+    ]},
+    { "slug": "digital-independence-2026", "images": [
+      { "id": "key", "alt": "a single green-lit key resting on dark stone, isolated and quiet", "scene": "a single green-lit key resting alone on dark stone, isolated, quiet authority, vast negative space" },
+      { "id": "foundation", "alt": "a green flag planted on a solid dark foundation block while faint platforms drift away in haze", "scene": "a green-glowing flag planted on a solid dark foundation block in the foreground, faint grey platforms drifting away into haze behind" },
+      { "id": "checklist", "alt": "a checklist etched in green light on a dark slab with a few items glowing complete", "scene": "a checklist etched in thin green light on a dark stone slab, a few of the marks glowing brighter as if complete, no readable text" }
+    ]}
+  ]
+}

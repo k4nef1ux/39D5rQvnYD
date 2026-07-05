@@ -1,0 +1,186 @@
+{
+  "style": {
+    "medium": "photorealistic 3d render, editorial minimal still-life, shallow depth of field",
+    "palette": {
+      "background": "#080807 warm near-black",
+      "accent": "#9cba90 dusted, restrained phosphor green - muted, NOT neon, soft glow only",
+      "neutrals": "warm grey concrete and stone"
+    },
+    "lighting": "low-key cinematic, single soft key light, soft volumetric haze, deep shadows",
+    "mood": "quiet, intelligent, slightly clandestine, premium",
+    "composition": "one clear subject, vast empty dark negative space, generous margins",
+    "forbidden": "no text, no letters, no numbers, no logos, no brand marks, no people, no faces, no clutter, no busy detail"
+  },
+  "posts": [
+    { "slug": "ai-agent-empty-repo-to-production", "images": [
+      { "id": "empty", "alt": "a single green cursor blinking on an empty dark screen in a vast void", "scene": "a single green-lit cursor blinking on an empty dark screen, vast surrounding void" },
+      { "id": "build", "alt": "thin green light assembling a small structure block by block in the dark", "scene": "a dark assembly where thin green light builds a small structure block by block" },
+      { "id": "shipped", "alt": "a finished minimal green-lit structure standing alone in darkness", "scene": "a finished minimal green-lit structure standing alone in darkness, deployed" }
+    ]},
+    { "slug": "ai-agent-tools-for-solo-builders", "images": [
+      { "id": "tool", "alt": "a single green-lit multi-tool on a dark workbench with empty space", "scene": "a single green-lit multi-tool resting on a dark workbench, vast empty space" },
+      { "id": "kit", "alt": "a small set of distinct green-edged tools arranged on dark stone", "scene": "a small set of distinct green-edged hand tools arranged neatly on dark stone" },
+      { "id": "arm", "alt": "one green-lit robotic arm working beside an empty stool in darkness", "scene": "one green-lit robotic arm working quietly beside an empty stool in darkness" }
+    ]},
+    { "slug": "ai-automation-tools", "images": [
+      { "id": "switch", "alt": "a single green toggle switch glowing in darkness, flipped on", "scene": "a single green toggle switch glowing in darkness, flipped on" },
+      { "id": "loop", "alt": "a quiet closed loop of thin green pipes carrying light in the dark", "scene": "a quiet closed loop of thin green pipes carrying light in a circuit, dark" },
+      { "id": "selfrun", "alt": "small machines running on green light with one empty human seat", "scene": "a row of small machines running themselves with green light, one dim human seat empty" }
+    ]},
+    { "slug": "ai-coding-agents-2026", "images": [
+      { "id": "weave", "alt": "thin green lines of light weaving into ordered structure on dark ground", "scene": "thin green lines of light weaving themselves into ordered structure on dark ground" },
+      { "id": "place", "alt": "a green robotic hand placing a final block into a clean lattice", "scene": "a green-lit robotic hand placing a final block into a clean minimal lattice" },
+      { "id": "complete", "alt": "a single green terminal cursor completing a clean shape in the dark", "scene": "a single green terminal cursor completing a clean shape in the dark" }
+    ]},
+    { "slug": "ai-content-business", "images": [
+      { "id": "stamp", "alt": "a green stamp pressing identical glowing marks with one unique", "scene": "a small green-lit stamp pressing identical glowing marks, one of them unique" },
+      { "id": "pages", "alt": "a quiet green flow of pages from one source into many, dark", "scene": "a quiet green assembly of pages flowing from one source into many, dark" },
+      { "id": "grow", "alt": "a green seed growing into a small tree of light, compounding", "scene": "a single green seed growing into a small tree of light, value compounding" }
+    ]},
+    { "slug": "ai-dropshipping-guide", "images": [
+      { "id": "box", "alt": "a single green-lit cardboard box floating in dark space", "scene": "a single green-lit cardboard box floating in dark space, faint glow" },
+      { "id": "supply", "alt": "a long dark supply line of green light between two distant points", "scene": "a long dark supply line of green light connecting two distant points" },
+      { "id": "margin", "alt": "a small green coin balanced on the thin edge of a box, dark", "scene": "a small green coin balanced on the edge of a box, thin margin, dark" }
+    ]},
+    { "slug": "ai-productivity-tools", "images": [
+      { "id": "hourglass", "alt": "a single green hourglass with glowing sand, dark background", "scene": "a single green hourglass with glowing green sand, dark background" },
+      { "id": "clear", "alt": "a cluttered grey desk clearing to one clean green-lit tool", "scene": "a cluttered grey desk clearing down to one clean green-lit tool, minimal" },
+      { "id": "arrow", "alt": "a green arrow of light cutting a straight path through dark tangle", "scene": "a green arrow of light cutting a straight path through a dark tangle" }
+    ]},
+    { "slug": "ai-tools-2026", "images": [
+      { "id": "few", "alt": "a few green-lit tools on dark stone among many discarded dim ones", "scene": "a few small green-lit tools on dark stone among many discarded dim ones" },
+      { "id": "essential", "alt": "a single essential green tool spotlit in darkness, rest fading", "scene": "a single essential green tool spotlit in darkness, the rest fading away" },
+      { "id": "toolbox", "alt": "a clean green toolbox closed in empty dark space", "scene": "a clean closed green-lit toolbox in empty dark space" }
+    ]},
+    { "slug": "best-ai-side-hustles-2026", "images": [
+      { "id": "doors", "alt": "several small green side doors in a dark wall, one ajar with light", "scene": "several small green-lit side doors in a dark wall, one ajar spilling light" },
+      { "id": "spark", "alt": "a green spark igniting beside a steady main green flame, dark", "scene": "a single green spark igniting beside a steady main green flame, dark" },
+      { "id": "plant", "alt": "a small green plant in a pot on the edge of a dark desk", "scene": "a small green-lit plant in a pot on the edge of a dark desk" }
+    ]},
+    { "slug": "best-ai-tools-for-side-hustles", "images": [
+      { "id": "kit", "alt": "a compact green-lit toolkit open on dark ground, minimal", "scene": "a compact green-lit toolkit open on dark ground, minimal" },
+      { "id": "wrench", "alt": "a single green wrench turning a small glowing bolt in the dark", "scene": "a single green wrench turning a small glowing bolt in the dark" },
+      { "id": "three", "alt": "three small green tools casting long shadows on dark stone", "scene": "three small green-lit tools casting long shadows on dark stone" }
+    ]},
+    { "slug": "best-web-hosting-2026", "images": [
+      { "id": "server", "alt": "a solid green-lit server monolith standing alone in dark fog", "scene": "a solid green-lit server monolith standing alone in dark fog" },
+      { "id": "slab", "alt": "a single green foundation slab supporting a small structure", "scene": "a single green-lit foundation slab supporting a small dark structure" },
+      { "id": "pulse", "alt": "a quiet green pulse traveling along a cable into darkness", "scene": "a quiet green pulse traveling along a cable into darkness" }
+    ]},
+    { "slug": "best-web-hosting-for-beginners", "images": [
+      { "id": "door", "alt": "a single green-lit doorway with a gentle path leading in, dark", "scene": "a single green-lit doorway with a gentle path leading in, dark" },
+      { "id": "block", "alt": "a small green building block being set down, minimal, dark", "scene": "a small green-lit building block being set down by an unseen hand, minimal" },
+      { "id": "sign", "alt": "a green-lit signpost pointing one clear way in the dark", "scene": "a green-lit signpost shape pointing one clear way in the dark" }
+    ]},
+    { "slug": "best-web-hosting-for-small-business", "images": [
+      { "id": "store", "alt": "a modest green-lit storefront cube glowing in darkness", "scene": "a modest green-lit storefront cube glowing in darkness" },
+      { "id": "foundation", "alt": "a steady green foundation under a small growing structure", "scene": "a steady green-lit foundation under a small growing dark structure" },
+      { "id": "gearcoin", "alt": "a single green gear and coin resting together on dark stone", "scene": "a single green-lit gear and coin resting together on dark stone" }
+    ]},
+    { "slug": "best-wordpress-hosting", "images": [
+      { "id": "modular", "alt": "a green-lit modular block structure assembling on dark ground", "scene": "a green-lit modular block structure assembling on dark ground" },
+      { "id": "plug", "alt": "a solid green server cube with a small glowing plug, dark", "scene": "a single solid green server cube with a small glowing plug, dark" },
+      { "id": "panel", "alt": "a quiet green-lit dashboard panel floating in void, no text", "scene": "a quiet green-lit blank dashboard panel floating in void, no text" }
+    ]},
+    { "slug": "can-ai-content-rank-on-google-2026", "images": [
+      { "id": "rise", "alt": "one green-lit page rising above a flat sea of dim identical pages", "scene": "one green-lit page rising above a flat sea of dim identical pages" },
+      { "id": "lens", "alt": "a single green magnifying lens over dark ground, faint glow", "scene": "a single green-lit magnifying lens over dark ground, faint glow" },
+      { "id": "ladder", "alt": "a green ladder climbing into dark heights, only top rungs lit", "scene": "a green-lit ladder climbing into dark heights, only the top rungs lit" }
+    ]},
+    { "slug": "cheap-web-hosting", "images": [
+      { "id": "coin", "alt": "a small green coin beside a solid dark server cube, minimal", "scene": "a small green-lit coin beside a solid dark server cube, minimal" },
+      { "id": "tag", "alt": "a single green-lit price tag shape on dark stone, no text", "scene": "a single green-lit price tag shape on dark stone, no text" },
+      { "id": "slab", "alt": "a modest green foundation slab in vast empty darkness", "scene": "a modest green-lit foundation slab in vast empty darkness" }
+    ]},
+    { "slug": "claude-vs-chatgpt-for-making-money", "images": [
+      { "id": "orbs", "alt": "two green-lit orbs of different character facing each other, dark", "scene": "two green-lit orbs of slightly different character facing each other in the dark" },
+      { "id": "paths", "alt": "two paths of green light diverging across dark ground", "scene": "two paths of green light diverging across dark ground" },
+      { "id": "tools", "alt": "two small green tools side by side on dark stone, one warmer", "scene": "two small green-lit tools side by side on dark stone, one warmer toned" }
+    ]},
+    { "slug": "free-web-hosting", "images": [
+      { "id": "strings", "alt": "a small green cube with thin chains fading around it, dark", "scene": "a small green-lit cube with thin chains fading around it, dark, free with strings" },
+      { "id": "cage", "alt": "an open green-lit cage door in darkness, ambiguous freedom", "scene": "an open green-lit cage door in darkness, ambiguous freedom" },
+      { "id": "pot", "alt": "a tiny green plant in a cracked free pot, dark background", "scene": "a tiny green-lit plant in a small cracked pot, dark background" }
+    ]},
+    { "slug": "freelancing-with-ai", "images": [
+      { "id": "merge", "alt": "a single green hand-tool merged with a faint green circuit, dark", "scene": "a single green-lit hand tool merged with a faint green circuit, dark" },
+      { "id": "lift", "alt": "one green node lifted higher by a thin green mechanical arm", "scene": "one green-lit node lifted higher by a thin green mechanical arm" },
+      { "id": "three", "alt": "three diverging green paths from one point on dark ground", "scene": "three diverging green paths of light from one point on dark ground" }
+    ]},
+    { "slug": "honest-claude-code-review", "images": [
+      { "id": "tool", "alt": "a single green-lit precision tool on a dark workbench, honest", "scene": "a single green-lit precision tool resting on a dark workbench, honest" },
+      { "id": "junior", "alt": "a green junior robotic arm working beside an empty supervisor chair", "scene": "a green-lit junior robotic arm working beside an empty supervisor chair" },
+      { "id": "built", "alt": "a clean green-lit structure built block by block in the dark", "scene": "a clean green-lit structure built block by block in the dark" }
+    ]},
+    { "slug": "honest-hostinger-review", "images": [
+      { "id": "server", "alt": "a solid green-lit budget server cube under a soft light, dark", "scene": "a solid green-lit budget server cube under a single soft light, dark" },
+      { "id": "scale", "alt": "a green-lit scale balancing a coin and a block, dark", "scene": "a green-lit value scale balancing a coin and a block, dark" },
+      { "id": "slab", "alt": "a modest green foundation slab with a faint price glow", "scene": "a modest green-lit foundation slab with a faint price glow, minimal" }
+    ]},
+    { "slug": "how-long-to-make-money-blogging", "images": [
+      { "id": "timeline", "alt": "a long dark timeline with green light slowly rising near the far end", "scene": "a long dark timeline with a green light slowly rising near the far end" },
+      { "id": "root", "alt": "a green seed underground with a long root before a small sprout", "scene": "a green-lit seed underground with a long root before a small sprout, dark" },
+      { "id": "curve", "alt": "a quiet green curve bending upward late across a dark field", "scene": "a quiet green curve bending upward late across a dark field" }
+    ]},
+    { "slug": "how-to-go-viral-2026", "images": [
+      { "id": "spread", "alt": "a single green spark spreading thin lines of light outward, dark", "scene": "a single green spark spreading thin lines of light outward in the dark" },
+      { "id": "gap", "alt": "a green-lit gap between two shapes, tension about to release", "scene": "a green-lit gap between two shapes, tension about to release, minimal" },
+      { "id": "ripple", "alt": "one green ripple expanding across dark still water", "scene": "one green ripple expanding across dark still water" }
+    ]},
+    { "slug": "how-to-make-money-with-a-blog", "images": [
+      { "id": "page-coin", "alt": "a green-lit page slowly turning into a small glowing coin, dark", "scene": "a green-lit page slowly turning into a small glowing coin, dark" },
+      { "id": "funnel", "alt": "a quiet green funnel from many faint readers to one bright action", "scene": "a quiet green funnel from many faint reader points to one bright action" },
+      { "id": "compound", "alt": "a small green plant of compounding leaves growing from a page", "scene": "a small green-lit plant of compounding leaves growing from a page, dark" }
+    ]},
+    { "slug": "make-money-online-2026", "images": [
+      { "id": "path", "alt": "a steady green path of stepping stones into dark distance", "scene": "a steady green-lit path of stepping stones into the dark distance, realistic" },
+      { "id": "coin", "alt": "a small green coin at the end of a long dark road, faint glow", "scene": "a small green-lit coin at the end of a long dark road, faint glow" },
+      { "id": "ladder", "alt": "a green ladder with missing easy rungs climbing in the dark", "scene": "a green-lit ladder with missing easy rungs, climbing into the dark" }
+    ]},
+    { "slug": "make-money-with-ai", "images": [
+      { "id": "circuit-coin", "alt": "a green circuit feeding into a small glowing coin, dark", "scene": "a green-lit circuit feeding into a small glowing coin, dark" },
+      { "id": "machine", "alt": "a green spark turning a quiet machine that outputs value", "scene": "a single green spark turning a quiet machine that outputs value, minimal" },
+      { "id": "plant", "alt": "a small green plant growing from a circuit board in darkness", "scene": "a small green-lit plant growing from a circuit board in darkness" }
+    ]},
+    { "slug": "make-money-with-claude-ai", "images": [
+      { "id": "orb-coin", "alt": "a warm green orb powering a small glowing coin, dark", "scene": "a single warm green-lit orb powering a small glowing coin, dark" },
+      { "id": "handoff", "alt": "a green assistant node handing a bright token to a human node", "scene": "a green-lit assistant node handing a small bright token to a human node" },
+      { "id": "flow", "alt": "a quiet green workflow of light from prompt to product, dark", "scene": "a quiet green workflow of light flowing from a prompt to a product, dark" }
+    ]},
+    { "slug": "online-income-streams", "images": [
+      { "id": "streams", "alt": "several thin green streams of light flowing at different speeds", "scene": "several thin green streams of light flowing across dark ground at different speeds" },
+      { "id": "reservoirs", "alt": "a few green-lit reservoirs filled by thin streams, minimal", "scene": "a few green-lit reservoirs filled by thin streams, dark, minimal" },
+      { "id": "lasting", "alt": "one steady green stream still flowing while others dried, dark", "scene": "one steady green stream still flowing while the others have dried, dark" }
+    ]},
+    { "slug": "top-ai-tools-for-freelancers", "images": [
+      { "id": "kit", "alt": "a compact green-lit freelancer toolkit open on a dark desk", "scene": "a compact green-lit freelancer's toolkit open on a dark desk" },
+      { "id": "pen", "alt": "a single green pen-tool drawing a clean line of light, dark", "scene": "a single green-lit pen tool drawing a clean line of light, dark" },
+      { "id": "three", "alt": "three small green tools arranged for one pair of hands, dark", "scene": "three small green-lit tools arranged for one pair of hands, dark stone" }
+    ]},
+    { "slug": "what-are-autonomous-ai-agents", "images": [
+      { "id": "auto", "alt": "a single green autonomous orb moving along a path by itself, dark", "scene": "a single green-lit autonomous orb moving along a path by itself, dark" },
+      { "id": "carry", "alt": "a green agent node carrying a task token across dark space alone", "scene": "a green-lit agent node carrying a task token across dark space alone" },
+      { "id": "parallel", "alt": "several small green agents working in quiet parallel in the dark", "scene": "several small green-lit agents working in quiet parallel in the dark" }
+    ]},
+    { "slug": "what-is-web-hosting", "images": [
+      { "id": "foundation", "alt": "a green foundation slab where a small house of light sits, dark", "scene": "a single green-lit foundation slab where a small house of light sits, dark" },
+      { "id": "plot", "alt": "a green-lit plot of dark ground with a faint plug of light", "scene": "a green-lit plot of dark ground with a faint plug of light" },
+      { "id": "server", "alt": "a quiet green server cube glowing softly in empty darkness", "scene": "a quiet green-lit server cube glowing softly in empty darkness" }
+    ]},
+    { "slug": "what-you-lose-publishing-on-platforms", "images": [
+      { "id": "locked", "alt": "a green-lit creation locked behind faint grey bars in the dark", "scene": "a green-lit creation locked behind faint grey bars in the dark" },
+      { "id": "siphon", "alt": "green light being siphoned away by thin grey threads, dark", "scene": "a green light being siphoned away by thin grey threads, dark" },
+      { "id": "key", "alt": "a small green house with its key held by a distant grey hand", "scene": "a small green-lit house with its key held by a distant grey hand, dark" }
+    ]},
+    { "slug": "why-feed-full-of-cute-pets", "images": [
+      { "id": "spiral", "alt": "a single hypnotic green spiral glowing in the dark, attention", "scene": "a single hypnotic green spiral glowing in the dark, attention" },
+      { "id": "hook", "alt": "a green-lit hook shape catching faint floating motes in darkness", "scene": "a green-lit hook shape catching faint floating motes in darkness" },
+      { "id": "scroll", "alt": "endless faint identical shapes scrolling into dark, one green pause", "scene": "endless faint identical shapes scrolling into the dark, one green pause" }
+    ]},
+    { "slug": "youtube-automation-with-ai", "images": [
+      { "id": "chair", "alt": "an empty green-lit director chair before a dark blank screen", "scene": "an empty green-lit director's chair before a dark blank screen" },
+      { "id": "line", "alt": "a quiet green production line assembling a glowing play shape", "scene": "a quiet green-lit production line assembling a glowing play shape, dark" },
+      { "id": "climb", "alt": "a small green play-button atop a tall dark competitive climb", "scene": "a small green-lit play-button atop a tall dark competitive climb" }
+    ]}
+  ]
+}
