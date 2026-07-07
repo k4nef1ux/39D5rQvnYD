@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the vault - 5 minute offers</title>
+<meta name="description" content="the general prompt library: research, product, content, operate. modules carry their own tuned prompts - the vault is the master set they descend from.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="primary">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">5<span>/</span>mo</a>
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="assembly.html">assembly</a>
+      <a href="identity.html">identity</a>
+      <a href="vault.html">vault</a>
+      <a href="operate.html">operate</a>
+      <a class="mod" href="modules/stickers.html">module 01 &middot; stickers</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="kicker">the master set</div>
+    <h1>the prompt vault</h1>
+    <p class="lede">every general prompt in the system. modules carry their own tuned versions inline - use the vault when you are working outside a module or building a new one. house rules baked into every prompt: plain english, lowercase, no emoji, no hype words, never promise an outcome.</p>
+    <div class="otp">
+      <div class="otp-head">sections</div>
+      <ol>
+        <li><a href="#research">research</a></li>
+        <li><a href="#product">product</a></li>
+        <li><a href="#content">content</a></li>
+        <li><a href="#operate">operate</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2>research</h2>
+
+    <h3>1.1 the niche matrix</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 1.1</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>give me a 10 x 6 matrix. rows: 10 audiences with strong identity and
+disposable income (examples: nurses, lifters, plant people, dog moms,
+anglers, teachers). columns: 6 feelings people buy to signal (pride,
+dark humor, belonging, discipline, nostalgia, spite). for each cell,
+one line: what that audience x feeling combination would buy to be
+recognized by their own. mark the 5 cells you would test first and say
+why in one line.</pre>
+    </figure>
+
+    <h3>1.2 the audience read</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 1.2</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>audience: [audience]. answer in bullets, one line each:
+what do they complain about to each other? what do they wear or display
+to be recognized by their own? what inside jokes exist? what do outsiders
+get wrong about them? what do they gift each other? which of these
+carries the strongest identity charge for a product?</pre>
+    </figure>
+
+    <h3>1.3 the trend scan</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 1.3</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>list 10 product or design trends currently moving in [category] for
+[audience]. for each: what it is (one line), why it is moving now,
+whether it is rising or peaking, and one twist that would make it feel
+fresh instead of copied. flag anything that depends on a licensed brand
+or character - those are off the table.</pre>
+    </figure>
+
+    <h3>1.4 the competitor gap</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 1.4</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>here are 5 top sellers in [niche] (titles + prices + review counts):
+[paste]. answer: what angle do all of them share? which audience feeling
+is nobody serving? what price band is empty? give me 3 offer ideas that
+fit the gaps, one line each.</pre>
+    </figure>
+
+    <h3>1.5 the occasion calendar</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 1.5</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>audience: [audience]. list the next 8 occasions this audience buys for
+(holidays, seasons, profession days, meme dates). for each: the date,
+what they buy, and how many days before it i should drop the offer to
+catch the buying window.</pre>
+    </figure>
+  </section>
+
+  <section id="product">
+    <h2>product</h2>
+
+    <h3>2.1 design concepts (pod)</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 2.1</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>audience: [audience]. feeling: [feeling]. give me 10 design concepts for
+[product type] this audience would buy to signal who they are. each: one
+line, text-based or simple-visual, no puns over 6 words, nothing that
+needs a licensed character or brand. mark the one a stranger would
+screenshot.</pre>
+    </figure>
+
+    <h3>2.2 concept to image prompt</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 2.2</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>turn this design concept into a prompt for an image model: "[concept]".
+the output prompt must specify: flat vector style, 2 - 3 colors max on a
+transparent background, bold readable typography if text-based, no
+gradients, no photorealism, centered composition with clean margins for
+print. return only the image prompt.</pre>
+    </figure>
+
+    <h3>2.3 dropship tiebreak</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 2.3</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>two candidate products: [a] and [b], both well rated. score each 1 - 5 on:
+solves a visible problem, demos well in 15 seconds of video, survives
+shipping wait without buyer regret, margin at 2.5x, not saturated on
+tiktok this month. one line per score. name the winner.</pre>
+    </figure>
+
+    <h3>2.4 the product page</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 2.4</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>product: [what it is]. audience: [who]. angle: [the feeling].
+write: a title under 8 words - 3 benefit bullets under 12 words each,
+about identity and feeling, not materials and dimensions - a 40-word
+description - one faq q&a about shipping (plain, no apologies).
+lowercase, plain english, 5th grade reading level, no hype words,
+never promise an outcome.</pre>
+    </figure>
+
+    <h3>2.5 mockup shots</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 2.5</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>write an image prompt for a product mockup: [product] with [design] on
+it, worn or used by [audience person] in a natural setting, soft light,
+phone-photo real, no studio gloss, no floating product on white.</pre>
+    </figure>
+  </section>
+
+  <section id="content">
+    <h2>content</h2>
+
+    <h3>3.1 the master batch</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.1</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>product: [x]. audience: [y]. angle: [z]. link: [url].
+write the full content set. all lowercase, no emoji, max 2 hashtags
+anywhere, never promise an outcome:
+(a) 5 scripts for 15-second vertical videos. each: hook line under 8
+    words, 2 beats of visual direction, cta line.
+(b) 10 threads posts: one hook line + one cta line each. vary the angle:
+    identity, humor, gift, problem, recognition, fomo.
+(c) 5 x posts: same as threads but sharper, one may be pure text.
+(d) 5 pinterest pin titles under 40 chars + one-line descriptions with
+    the words people actually search.
+(e) 2 instagram captions: one story-led, one punchline-led.
+(f) 1 facebook post: warm, plain, shareable by someone's aunt.</pre>
+    </figure>
+
+    <h3>3.2 instagram launch week</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.2</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>brand: [name]. product: [x]. write 6 instagram posts for launch week:
+3 product shots (caption: one line + soft cta), 2 audience-joke posts
+(caption: the joke, no selling), 1 behind-the-scenes (caption: what i
+made today, one line). all lowercase, no emoji, max 2 hashtags each.</pre>
+    </figure>
+
+    <h3>3.3 x, the week</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.3</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>product: [x]. audience: [y]. write 8 x posts across the week: 2 hooks
+with image + link, 2 audience in-jokes no link, 2 receipts posts (drop
+number, build time, one thing learned), 1 question to the audience,
+1 quiet cta. lowercase, no emoji, no hashtags.</pre>
+    </figure>
+
+    <h3>3.4 youtube shorts metadata</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.4</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>for these 5 short scripts: [paste hooks]. write per short: a title under
+50 chars with a search phrase in it, a 2-line description with the link
+on line 2, and 3 tags. no clickbait caps, lowercase titles.</pre>
+    </figure>
+
+    <h3>3.5 pinterest boards + pins</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.5</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>brand: [name], category: [x], audience: [y]. name 5 pinterest boards
+using the words this audience searches (not clever names). then for
+product [z]: 5 pin titles under 40 chars + descriptions of 1 - 2 lines,
+keyword-forward, one soft cta each.</pre>
+    </figure>
+
+    <h3>3.6 replies + dm closer</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 3.6</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>product: [x]. write: 5 reply templates for comments (price question,
+shipping question, "love this", skeptic, troll - the troll gets charm,
+not defense), and 2 dm replies for "is this still available" that answer,
+link, and stop talking. lowercase, human, no pressure lines.</pre>
+    </figure>
+  </section>
+
+  <section id="operate">
+    <h2>operate</h2>
+
+    <h3>4.1 the variation (iterate verdict)</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 4.1</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>this offer got clicks but no sales. page text: [paste]. numbers: [clicks,
+carts, sales]. keep the product, change the angle. give me 5 variations:
+new audience, new feeling, new occasion, new price frame, new hook. one
+line each. mark the one to run and say why in one line.</pre>
+    </figure>
+
+    <h3>4.2 the weekly autopsy</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 4.2</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>here are my drops this week from the log: [paste rows]. answer plainly:
+what did the clicks cluster around - audience, feeling, or format? what
+died instantly and what does that rule out? what should next week's 5
+drops try, as one line each? do not flatter me. if the pattern says my
+hooks are weak, say exactly that.</pre>
+    </figure>
+
+    <h3>4.3 the scale plan</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 4.3</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>drop #[n] hit scale: [product], [sales] sales in 48h, best content was
+[link/desc]. write the 7-day plan: content doubling (what formats, what
+angles), a $10 - 20/day paid test behind the best short (targeting in one
+line), one upsell or bundle idea, and the numbers that tell me at day 7
+to keep feeding or stop.</pre>
+    </figure>
+
+    <h3>4.4 the weekly receipts post</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 4.4</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>from the log: [paste week's rows]. write a build-in-public post for
+threads/x and a 300-word blog version: what i dropped, real build times,
+what died and the verdicts, the one pattern i am taking into next week.
+no income claims, no percentages that flatter, lowercase, plain. the
+discipline is the flex, not the money.</pre>
+    </figure>
+
+    <h3>4.5 the friction analyzer</h3>
+    <figure class="prompt">
+      <figcaption><span class="p-label">prompt 4.5</span><button class="copy" type="button">copy</button></figcaption>
+      <pre>my last 3 drops timed: [step - time, step - time...]. target: 5:00 total.
+for each step over its minute: is it a missing template, a missing
+default, a login, or a decision that needs a rule? give the fix for each
+in one line. tell me which single fix buys the most seconds.</pre>
+    </figure>
+  </section>
+
+  <div class="pn">
+    <a href="identity.html"><span class="pn-label">back</span><span class="pn-title">&larr; identity</span></a>
+    <a class="next" href="operate.html"><span class="pn-label">next</span><span class="pn-title">operate &rarr;</span></a>
+  </div>
+</main>
+
+<footer>
+  <span>5 minute offers</span>
+  <span>built quiet &middot; <a href="https://q1rk.com">q1rk.com</a></span>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

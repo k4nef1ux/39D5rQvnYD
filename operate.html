@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>operate - 5 minute offers</title>
+<meta name="description" content="pricing rules, the 48-hour kill-or-scale verdict, the drop log, the receipts loop, and the friction fixes that get a drop to five minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="primary">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">5<span>/</span>mo</a>
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="assembly.html">assembly</a>
+      <a href="identity.html">identity</a>
+      <a href="vault.html">vault</a>
+      <a href="operate.html">operate</a>
+      <a class="mod" href="modules/stickers.html">module 01 &middot; stickers</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="kicker">every drop &middot; forever</div>
+    <h1>operate</h1>
+    <p class="lede">the rules that run after the drop ships: what to charge, when to kill, what to log, what to post, and how the forty minutes becomes five.</p>
+    <div class="otp">
+      <div class="otp-head">on this page</div>
+      <ol>
+        <li><a href="#pricing">pricing rules</a></li>
+        <li><a href="#verdict">kill or scale - the 48-hour rule</a></li>
+        <li><a href="#log">the drop log</a></li>
+        <li><a href="#receipts">the receipts loop</a></li>
+        <li><a href="#friction">friction fixes - getting to 5:00</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <section id="pricing">
+    <h2>pricing rules - no thinking allowed</h2>
+    <p>pricing is a rule, not a decision.</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <tr><th>path</th><th>rule</th><th>floor</th></tr>
+      <tr><td>pod</td><td>(base cost + shipping) x 3, rounded up to .99</td><td>$8 margin - under it, change the product, never the margin</td></tr>
+      <tr><td>stickers</td><td>pack pricing - see <a href="modules/stickers.html#economics">module 01</a></td><td>$5 pack margin</td></tr>
+      <tr><td>dropship</td><td>cost x 2.5 - 3, shipping baked in, rounded to .99</td><td>customer sees free shipping; the price already paid for it</td></tr>
+    </table>
+    </div>
+    <h3>the three laws</h3>
+    <ol>
+      <li><strong>never discount on drop day.</strong> a coupon is an iterate-verdict tool, not a launch tool. launching with a discount teaches the offer to beg</li>
+      <li><strong>never price under the floor to chase a sale.</strong> a sale with no margin is a loss wearing makeup</li>
+      <li><strong>round to .99, always.</strong> consistency reads as intentional; intentional reads as trustworthy</li>
+    </ol>
+  </section>
+
+  <section id="verdict">
+    <h2>kill or scale - the 48-hour rule</h2>
+    <p>this rule is the actual secret of the whole system. everyone sells starting. nobody sells quitting fast. speed only compounds if losers die on schedule - and the rule decides, not you. you will want to give a drop one more day. that want is the thing this section exists to kill.</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <tr><th>verdict</th><th>condition at hour 48</th><th>action</th></tr>
+      <tr><td>kill <span style="color:var(--dim)">(default)</span></td><td>under 10 link clicks, or 50+ clicks with zero sales and zero carts</td><td>archive the product, log the verdict, next drop. no mourning</td></tr>
+      <tr><td>iterate</td><td>10 - 50 clicks, carts or 1 sale</td><td>the angle caught, the offer missed. run vault 4.1, relaunch as a NEW drop. max 2 iterations, then kill</td></tr>
+      <tr><td>scale</td><td>2+ organic sales in 48h</td><td>release remaining content, double next week's batch, consider $10 - 20/day behind the best short. it has earned one week</td></tr>
+    </table>
+    </div>
+    <p style="color:var(--dim);font-size:13.5px">low-ticket offers (stickers) use the adjusted thresholds inside their module.</p>
+    <h3>reading the clicks</h3>
+    <ul>
+      <li><strong>no clicks:</strong> the hook failed, not the product. the content never earned the tap</li>
+      <li><strong>clicks, no carts:</strong> the page failed - price shock, weak bullets, or a hook the page did not match</li>
+      <li><strong>carts, no sales:</strong> friction or trust - shipping surprise, thin about page, price just over the line</li>
+      <li><strong>sales:</strong> feed it. winners are fed, not admired</li>
+    </ul>
+    <div class="verdict">
+      <p>a drop that took 40 minutes and died in 48 hours is the system <strong>working</strong>. it cost one evening to learn what the three-week version pays a month for. log it, say so in public, pull the handle again.</p>
+    </div>
+  </section>
+
+  <section id="log">
+    <h2>the drop log</h2>
+    <p>the log is the asset. the drops are just data feeding it. no drop exists until it has a row; no row is complete until it has a verdict.</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <tr><th>column</th><th>what goes in it</th></tr>
+      <tr><td>#</td><td>drop number, forever incrementing. iterations get their own number</td></tr>
+      <tr><td>date</td><td>drop day</td></tr>
+      <tr><td>module</td><td>stickers / apparel / dropship</td></tr>
+      <tr><td>audience</td><td>who</td></tr>
+      <tr><td>feeling</td><td>the identity charge (pride, humor, belonging...)</td></tr>
+      <tr><td>product</td><td>what it physically is</td></tr>
+      <tr><td>angle</td><td>the one-line hook that led the content</td></tr>
+      <tr><td>build time</td><td>stopwatch, minutes:seconds. no rounding down</td></tr>
+      <tr><td>link</td><td>the live product url</td></tr>
+      <tr><td>48h clicks / carts / sales</td><td>the three numbers the verdict reads</td></tr>
+      <tr><td>verdict</td><td>kill / iterate / scale</td></tr>
+      <tr><td>note</td><td>one line only. what the numbers said</td></tr>
+    </table>
+    </div>
+    <h3>the weekly ritual - 20 minutes, same day every week</h3>
+    <ol>
+      <li>every open drop gets its 48h verdict rendered. no exceptions, no extensions</li>
+      <li>run vault 4.2 (the autopsy) on the week's rows</li>
+      <li>run vault 4.4 (the receipts post) and publish it</li>
+      <li>write next week's 3 - 5 planned drops as empty rows. a row waiting is a commitment</li>
+    </ol>
+    <p>what the log becomes: week 1, a habit. week 4, a pattern detector. week 8, your content engine. week 12, the receipts that sell whatever you build next.</p>
+  </section>
+
+  <section id="receipts">
+    <h2>the receipts loop - the log becomes the marketing</h2>
+    <p>every drop generates a public artifact. the machine running in public is the most magnetic content in this space - and it costs nothing extra, because the log already wrote it. <strong>the discipline is the flex. never the money.</strong></p>
+    <h3>the drop card - every drop, day one</h3>
+    <p style="border:1px solid var(--hair);border-radius:10px;padding:16px 20px;color:var(--ink);max-width:56ch">drop #14. nurses x dark humor, sticker 6-pack. built in 9:41. live. 48-hour clock started.</p>
+    <p>that is the whole post. the number and the stopwatch are the hook. people follow counters.</p>
+    <h3>the verdict card - every drop, hour 48</h3>
+    <p style="border:1px solid var(--hair);border-radius:10px;padding:16px 20px;color:var(--ink);max-width:56ch">drop #14, hour 48: 22 clicks, 2 carts, 0 sales. verdict: iterate - the angle caught, the shipping line killed the carts. relaunching as drop #15.</p>
+    <p>losing in public with a rule attached reads as competence, not failure. it is the exact post nobody else has the stomach to write - which is why it works.</p>
+    <h3>the three laws of the loop</h3>
+    <ol>
+      <li><strong>no income claims. ever.</strong> the stopwatch and the verdicts are the whole show</li>
+      <li><strong>post the losses with the same energy as the wins.</strong> the credibility compounds off the kills</li>
+      <li><strong>never break the counter.</strong> drop numbers are sacred and sequential. an audience that watches #23 become #24 is an audience waiting for the next one</li>
+    </ol>
+    <p>after 30 logged, posted drops you own three things nobody can copy: a pattern-tested niche map, an audience that watched you do the work, and the receipts to sell whatever you build next - without ever having promised anyone a dime.</p>
+  </section>
+
+  <section id="friction">
+    <h2>friction fixes - getting to 5:00</h2>
+    <p>the gap between drop 1 (forty minutes) and drop 15 (five) is just friction removal. run vault 4.5 on your timed steps weekly; the usual suspects:</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <tr><th>symptom</th><th>source</th><th>fix</th></tr>
+      <tr><td>pick takes 4 min</td><td>browsing, taste</td><td>the matrix pre-picks 5 cells for the week. drop day only executes</td></tr>
+      <tr><td>design regenerated 5x</td><td>vague image prompt</td><td>always route concepts through the concept-to-image prompt - it forces the constraints</td></tr>
+      <tr><td>page takes 6 min</td><td>writing from scratch</td><td>the template is a draft product you duplicate. never a blank page</td></tr>
+      <tr><td>logins eat 3 min</td><td>cold sessions</td><td>one bookmark folder named "drop": store, printify, chat, image tool, canva, scheduler, log. open all</td></tr>
+      <tr><td>shorts take 10 min</td><td>editing ambition</td><td>slideshow over product shots, one text hook. motion beats polish</td></tr>
+      <tr><td>posting eats 8 min</td><td>native posting on 7 apps</td><td>schedule threads/x/pins in one sitting. only tiktok + youtube get native posts on drop day</td></tr>
+      <tr><td>the 48h check never happens</td><td>no ritual</td><td>calendar block, same day weekly, 20 minutes. verdicts render or the system is dead</td></tr>
+      <tr><td>second-guessing the pick</td><td>taste sneaking back</td><td>reread the operating rules on the home page. first, not best</td></tr>
+    </table>
+    </div>
+    <h3>when a drop goes over 15 minutes after drop 5</h3>
+    <p>stop optimizing the step and check the rule instead. overtime after drop 5 is almost never tooling - it is a decision that should have been a rule. find the decision you keep re-making, write the rule, add it to your copy of this page.</p>
+    <h3>the graduation test</h3>
+    <p>run a full drop, idea to completed, under 5:00, twice in one week. when that happens the machine is built - and the interesting question stops being "how fast" and becomes "which 5 cells next week." that question is answered by the log, which by now is smarter than both of us.</p>
+  </section>
+
+  <div class="pn">
+    <a href="modules/stickers.html"><span class="pn-label">back</span><span class="pn-title">&larr; module 01 &middot; stickers</span></a>
+    <a class="next" href="index.html"><span class="pn-label">start over</span><span class="pn-title">home &rarr;</span></a>
+  </div>
+</main>
+
+<footer>
+  <span>5 minute offers</span>
+  <span>built quiet &middot; <a href="https://q1rk.com">q1rk.com</a></span>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
