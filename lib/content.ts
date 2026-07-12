@@ -56,7 +56,7 @@ export type Frontmatter = {
   // under /public, e.g. "/images/my-slug/cover.webp", or an image route)
   cover?: string;
   // --- gift/product fields (type: "gift") ---
-  // which gift lane it belongs to: "for him" | "for her" | "for them" |
+  // which gift lane it belongs to: "for him" | "for her" | "for friends" | "work gifts" |
   // "occasions" | "hobbies". Also carried as the first tag so /tags/for-him
   // acts as the category page.
   category?: string;

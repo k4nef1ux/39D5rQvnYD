@@ -23,7 +23,8 @@ import type { SidebarPost } from "@/components/Sidebar";
 const CATEGORIES = [
   { label: "for him", href: "/tags/for-him", note: "gear, grooming, gadgets" },
   { label: "for her", href: "/tags/for-her", note: "jewelry, self-care, cozy" },
-  { label: "for them", href: "/tags/for-them", note: "couples, kids, pets" },
+  { label: "for friends", href: "/tags/for-friends", note: "cozy, personal, chosen" },
+  { label: "work gifts", href: "/tags/work-gifts", note: "coworkers, secret santa" },
   { label: "occasions", href: "/tags/occasions", note: "birthdays, holidays" },
   { label: "hobbies", href: "/tags/hobbies", note: "makers, readers, players" },
 ];

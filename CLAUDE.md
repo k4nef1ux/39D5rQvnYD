@@ -7,7 +7,7 @@ not in `public/`), so visitors can't see it - only people with repo access.
 ## What this is
 **findshq.com** - a **gift-affiliate site** styled as a private showroom:
 hand-picked gifts presented like pieces in a case, sorted **for him / for her /
-for them / occasions / hobbies**. Each gift is a product that links out to a
+for friends / work gifts / occasions / hobbies**. Each gift is a product that links out to a
 retailer (amazon etc.); findshq earns via affiliate programs. The tagline is
 **"gifts worth giving."**
 
@@ -32,10 +32,10 @@ it clean. See **HANDOVER.md** for current state.
 - **Next.js 15 App Router**, TypeScript, React 19.
 - **Server mode** (`next start`) on **Hostinger** - NOT static export
   (`output:'export'` caused NoFallbackError on the parent). API routes work.
-- Git: `git@github.com:k4nef1ux/39D5rQvnYD.git`, dev branch
-  **`claude/findshq-domain-strategy-xi034x`**. NOTE: `main` still holds the
-  unrelated "5 minute offers" static site; this branch replaces it with the
-  findshq Next.js app when merged.
+- Git: `git@github.com:k4nef1ux/39D5rQvnYD.git`, branch **`main`** (default).
+  Working norm: build -> verify -> push straight to `main`. (The old "5 minute
+  offers" static site that previously lived on main is gone; recoverable at
+  commit `d19668c` if ever needed.)
 - **Pushing auto-deploys** (Hostinger redeploys on push, ~2 min). Working norm:
   build -> verify -> push. Node >= 18.18. `npm run build` / `npm run start`
   (port 3000).
@@ -96,9 +96,16 @@ description, tags, featured, cover, draft`, plus gift commerce fields
 `price, buyUrl, merchant, rating`, and `sponsored` (surfaces a visible
 "sponsored" disclosure). `draft: true` hides a post in production.
 
-**Categories are TAGS.** for him / for her / for them / occasions / hobbies are
-implemented as tags -> `/tags/[tag]` pages; the nav links to `/tags/for-him`
-etc. (see `config/site.ts nav`). There is no separate "category" route.
+**Categories are TAGS.** for him / for her / for friends / work gifts /
+occasions / hobbies are implemented as tags -> `/tags/[tag]` pages; the nav
+links to `/tags/for-him` etc. (see `config/site.ts nav`). There is no separate
+"category" route.
+**Category labels must be terms real people search (owner feedback, jul 2026):**
+never invent an umbrella label ("for them") when a search-real lane exists
+("gifts for friends", "work gifts"). Before adding a lane, check it maps to an
+actual query; apply the same test to any new tag, nav label, or page title.
+Next lanes to open once content exists to fill them: **for kids**, **for
+couples** (don't ship an empty hub - thin pages hurt more than a missing lane).
 
 **SEO length discipline:** the layout appends ` - findshq` to every title, so
 keep frontmatter `title` short (rendered `<title>` <= 60 chars) and

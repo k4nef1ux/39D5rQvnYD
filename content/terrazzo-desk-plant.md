@@ -2,14 +2,14 @@
 title: desk plant in a terrazzo pot
 slug: terrazzo-desk-plant
 type: gift
-category: for them
+category: work gifts
 price: "$34"
 buyUrl: "https://www.amazon.com/dp/B08PLANT001"
 merchant: amazon
 date: 2026-06-02
 cover: "/images/terrazzo-desk-plant/cover.webp"
 description: "A low-maintenance desk plant potted in a speckled terrazzo planter - a fresh little pick-me-up gift for the coworker, grad, or friend in a new apartment."
-tags: [for them, plants, desk, home]
+tags: [work gifts, plants, desk, home]
 featured: false
 rating: 4.4
 ---

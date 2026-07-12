@@ -25,7 +25,7 @@ export default function GiftHero({ find }: { find?: HeroFind }) {
           <p className="ghero-lede">
             every find here earned its place - checked against real owner
             reviews, priced honestly, chosen like it&apos;s for someone we know.
-            for him, for her, for them, for every occasion.
+            for him, for her, for everyone on the list.
           </p>
           <div className="ghero-cta">
             <a className="btn-gold" href="#stream">

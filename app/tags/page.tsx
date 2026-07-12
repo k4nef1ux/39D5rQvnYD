@@ -12,7 +12,7 @@ import TagCloud from "@/components/TagCloud";
 
 export const metadata: Metadata = {
   title: "browse the notes by topic and tag",
-  description: "browse findshq gifts by category and interest - for him, for her, for them, occasions, hobbies, and more. every gift lane, sized by how many finds it holds.",
+  description: "browse findshq gifts by category and interest - for him, for her, friends, work, occasions, hobbies, and more. every gift lane, sized by how many finds it holds.",
   alternates: { canonical: "/tags" },
 };
 

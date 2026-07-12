@@ -5,18 +5,17 @@ reference is **CLAUDE.md**.
 
 ## what findshq is
 A **gift-affiliate site styled as a private showroom** - hand-picked gifts
-presented like pieces in a case, sorted **for him / for her / for them /
-occasions / hobbies**. Tagline: **"gifts worth giving."** Each gift links out
+presented like pieces in a case, sorted **for him / for her / for friends /
+work gifts / occasions / hobbies** (labels must map to real search queries -
+see the category rule in CLAUDE.md). Tagline: **"gifts worth giving."** Each gift links out
 to a retailer (amazon etc.) via an affiliate link (bare by default - see the
 affiliate rules in CLAUDE.md).
 
 ## current state (v2 - the showroom)
-- **v2 rebuild on branch `claude/findshq-domain-strategy-xi034x`**: re-cloned
+- **v2 rebuild, now on `main` (default branch)**: re-cloned
   from the CURRENT q1rk engine (picks up the OG/twitter PNG card routes, nav
   dropdown, style-check, vz article visuals), the commerce layer ported from
   the v1 scaffold (recoverable at commit `bc5b6c0`), then fully re-themed.
-  NOTE: `main` still holds the unrelated "5 minute offers" static site until
-  this branch is merged.
 - **Theme: modern futuristic ultra-wealthy minimalist.** Cold obsidian
   `--void #08080b`, porcelain `--ink`, champagne-metal accent `--phos #d8b47f`.
   The feed is ONE column of large vitrine cards (image full-bleed on a lit

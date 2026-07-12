@@ -50,7 +50,7 @@ export const site: SiteConfig = {
   url: "https://findshq.com",
   title: "findshq - gifts worth giving",
   description:
-    "hand-picked gifts that look and feel expensive - vetted against real owner reviews and sorted for him, for her, for them, and every occasion.",
+    "hand-picked gifts that look and feel expensive - vetted against real owner reviews and sorted for him, for her, friends, work, and every occasion.",
   tagline: "gifts worth giving.",
   footerEcho: "found. vetted. worth giving.",
   latestCount: 6,
@@ -63,13 +63,14 @@ export const site: SiteConfig = {
   analytics: { gaId: "", clarityId: "", ahrefsKey: "" },
   ogHeadline: { lead: "gifts worth", accent: "giving." },
   llmsIntro:
-    "Hand-picked gifts, vetted against real owner reviews. A gift for him, for her, for them, and every occasion.",
+    "Hand-picked gifts, vetted against real owner reviews. A gift for him, for her, friends, coworkers, and every occasion.",
   nav: [
     { label: "for him", href: "/tags/for-him", order: 2 },
     { label: "for her", href: "/tags/for-her", order: 3 },
-    { label: "for them", href: "/tags/for-them", order: 4 },
-    { label: "occasions", href: "/tags/occasions", order: 5 },
-    { label: "hobbies", href: "/tags/hobbies", order: 6 },
+    { label: "for friends", href: "/tags/for-friends", order: 4 },
+    { label: "work gifts", href: "/tags/work-gifts", order: 5 },
+    { label: "occasions", href: "/tags/occasions", order: 6 },
+    { label: "hobbies", href: "/tags/hobbies", order: 7 },
     // `about` is a content page flagged nav:true - it merges in automatically.
   ],
   links: [],
