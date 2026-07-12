@@ -2,6 +2,8 @@
 title: terms
 seoTitle: "terms of use - the findshq fine print"
 slug: terms
+navParent: "/about"
+order: 4
 type: page
 date: 2026-06-01
 description: "The plain-english terms of use for findshq: how our gift recommendations work, what outbound links mean, and the limits of what we can promise."

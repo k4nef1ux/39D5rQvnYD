@@ -65,6 +65,7 @@ export const site: SiteConfig = {
   llmsIntro:
     "Hand-picked gifts, vetted against real owner reviews. A gift for her, for him, for mom, for dad, and every occasion.",
   nav: [
+    { label: "home", href: "/", order: 1 },
     { label: "for her", href: "/tags/for-her", order: 2 },
     { label: "for him", href: "/tags/for-him", order: 3 },
     { label: "for mom", href: "/tags/for-mom", order: 4 },
@@ -76,5 +77,10 @@ export const site: SiteConfig = {
     { label: "under $50", href: "/tags/under-50", order: 8 },
     // `about` is a content page flagged nav:true - it merges in automatically.
   ],
-  links: [],
+  // internal index pages, footer-only (the nav stays lanes-first): the full
+  // product index and the guides index
+  links: [
+    { label: "all finds", href: "/gear" },
+    { label: "guides", href: "/notes" },
+  ],
 };

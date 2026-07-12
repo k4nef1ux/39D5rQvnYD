@@ -71,13 +71,20 @@ export default async function TagArchive({
   const leftTag = tn > 1 ? allTags[(ti - 1 + tn) % tn] : null;
   const rightTag = tn > 1 ? allTags[(ti + 1) % tn] : null;
 
+  // lane tags (the ones in the top nav) are cycled by KeyboardNav in the
+  // layout, like q1rk's sections; mounting the adjacent-tag arrows here too
+  // made both handlers fire on one keypress and the tag one won the race.
+  // Non-lane tags keep the adjacent-tag arrows.
+  const isLane = site.nav.some((i) => i.href === `/tags/${tag}`);
   return (
     <div className="layout layout-index">
-      <KeyEdges
-        leftHref={leftTag ? `/tags/${leftTag.slug}` : null}
-        rightHref={rightTag ? `/tags/${rightTag.slug}` : null}
-        swipe
-      />
+      {!isLane && (
+        <KeyEdges
+          leftHref={leftTag ? `/tags/${leftTag.slug}` : null}
+          rightHref={rightTag ? `/tags/${rightTag.slug}` : null}
+          swipe
+        />
+      )}
       <div className="layout-main">
         <div className="page-tag">findshq &nbsp;//&nbsp; tag</div>
         <h1 className="page-title">

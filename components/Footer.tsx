@@ -23,11 +23,17 @@ export default function Footer({ items }: { items: NavItem[] }) {
             {item.label}
           </Link>
         ))}
-        {site.links.map((l) => (
-          <a key={l.href} href={l.href} rel="me noopener">
-            {l.label}
-          </a>
-        ))}
+        {site.links.map((l) =>
+          l.href.startsWith("/") ? (
+            <Link key={l.href} href={l.href}>
+              {l.label}
+            </Link>
+          ) : (
+            <a key={l.href} href={l.href} rel="me noopener">
+              {l.label}
+            </a>
+          )
+        )}
       </nav>
 
       {legal.length > 0 && (

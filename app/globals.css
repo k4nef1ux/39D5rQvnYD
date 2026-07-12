@@ -155,7 +155,7 @@ a { color: inherit; text-decoration: none; }
   max-width: var(--measure-wide);
   margin: 0 auto;
   padding: 22px var(--pad);
-  display: flex; align-items: center; gap: 38px;
+  display: flex; align-items: center; gap: 22px;
 }
 /* the wordmark: serif, quiet, with the "hq" set italic in champagne - the
    same engraved-plate voice as the plaques. No heavy glow: metal, not neon. */
@@ -166,12 +166,12 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-logo .one { font-style: italic; color: var(--phos); text-shadow: 0 0 10px rgba(216, 180, 127, 0.25); }
 .nav-menu {
-  display: flex; align-items: center; gap: clamp(16px, 2vw, 28px);
-  list-style: none; margin-left: 8px;
+  display: flex; align-items: center; gap: clamp(12px, 1.6vw, 22px);
+  list-style: none; margin-left: 4px;
 }
 .nav-menu a {
-  font-size: 13.5px; letter-spacing: 0.14em; text-transform: uppercase;
-  white-space: nowrap; /* 7 items: never let a lane label wrap to two lines */
+  font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  white-space: nowrap; /* 9 items: never let a lane label wrap to two lines */
   color: var(--dim); transition: color 0.3s ease; padding: 6px 0;
 }
 .nav-menu a:hover { color: var(--ink); }

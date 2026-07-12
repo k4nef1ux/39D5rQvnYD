@@ -1,6 +1,8 @@
 ---
 title: affiliate disclosure
-slug: disclosure
+slug: affiliate-disclosure
+navParent: "/about"
+order: 3
 type: page
 date: 2026-06-01
 description: "An honest affiliate disclosure for findshq: we take part in Amazon Associates and other programs, earn small commissions, and keep our opinions our own."

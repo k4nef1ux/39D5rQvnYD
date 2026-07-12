@@ -1,7 +1,9 @@
 ---
-title: privacy
+title: privacy policy
 seoTitle: "privacy policy - how findshq handles your data"
-slug: privacy
+slug: privacy-policy
+navParent: "/about"
+order: 1
 type: page
 date: 2026-06-01
 description: "How findshq handles your privacy: no accounts, minimal data, basic analytics, and a plain-english note on the affiliate cookies our partners may set."
