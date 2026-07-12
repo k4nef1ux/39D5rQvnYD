@@ -1,0 +1,17 @@
+{
+  "style": {
+    "medium": "photorealistic 3d render, editorial minimal still-life, shallow depth of field",
+    "palette": { "background": "#080807 warm near-black", "accent": "#9cba90 dusted restrained phosphor green - muted, NOT neon, soft glow only", "neutrals": "warm grey concrete and stone" },
+    "lighting": "low-key cinematic, single soft key light, soft volumetric haze, deep shadows",
+    "mood": "quiet, intelligent, slightly clandestine, premium",
+    "composition": "one clear subject, vast empty dark negative space, generous margins",
+    "forbidden": "no text, no letters, no numbers, no logos, no brand marks, no people, no faces, no clutter"
+  },
+  "posts": [
+    { "slug": "ai-income-methods-ranked", "images": [
+      { "id": "rank", "alt": "ranked podium blocks", "scene": "three glowing green blocks of increasing height forming a ranked podium on dark ground, the tallest faintly crowned, vast negative space" },
+      { "id": "tiers", "alt": "ascending tiers", "scene": "a steep dark staircase of three landings lit progressively brighter green, ascending into darkness" },
+      { "id": "choose", "alt": "diverging signpost", "scene": "a single green-lit signpost with diverging paths on dark ground, one path glowing brighter, minimal" }
+    ]}
+  ]
+}
