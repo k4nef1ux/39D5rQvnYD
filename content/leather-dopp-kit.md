@@ -3,14 +3,14 @@ title: leather dopp kit
 seoTitle: "leather dopp kit - a sharp travel gift for him"
 slug: leather-dopp-kit
 type: gift
-category: for him
+category: for dad
 price: "$54"
 buyUrl: "https://www.amazon.com/dp/B08DOPP0001"
 merchant: amazon
 date: 2026-05-14
 cover: "/images/leather-dopp-kit/cover.webp"
 description: "A handsome full-grain leather toiletry bag that ages beautifully - a grown-up upgrade gift for the guy still using that old freebie kit."
-tags: [for him, travel, leather, everyday]
+tags: [for dad, travel, leather, everyday]
 featured: true
 rating: 4.7
 ---

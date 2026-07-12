@@ -38,10 +38,23 @@ Quiet confidence, plain english, lowercase, hyphens only, no emoji. Reviews
 are **author-voiced curation with receipts**: what owners consistently report,
 never fabricated first-person ownership. Never promise an outcome.
 
+## homepage strategy (owner direction, jul 2026)
+The front page commits to ONE niche ("gifts that look expensive. under $50."),
+spoken to specifically - swap it in `GiftHero.tsx` if the site lands elsewhere.
+Trust elements: vetting-voiced proof above the fold, guide cards with cut-count
+badges, the "from the vetting file" flaw snippet. The gift quiz (/quiz) is the
+share/pinterest front door. IMPORTANT: all trust copy is vetting-voiced (owner
+reviews, complaints-first) because no products have actually been bought -
+**if/when the owner buys and tests products for real, upgrade the copy to
+firsthand claims ("bought it ourselves", real photos, real measurements) - that
+is the strongest version and Google's reviews system rewards it.**
+
 ## next steps (in rough order)
 1. Real products: swap the 10 placeholder buyUrls for real retailer links,
    re-verify prices/ratings against live listings, regenerate/replace covers
-   with real product imagery where programs provide it.
+   with real product imagery where programs provide it. Strongly consider
+   BUYING the under-$50 picks - firsthand photos/measurements unlock the
+   "bought it ourselves" homepage copy and the Wirecutter trust tier.
 2. Hostinger: point findshq.com at this repo (branch merge -> auto-deploy),
    set `UPSTASH_REDIS_REST_URL/TOKEN` env vars, create the Reach form, add an
    IndexNow key.

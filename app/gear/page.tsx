@@ -15,7 +15,7 @@ import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "all the finds",
-  description: "every find in one place, newest first - hand-picked gifts for him, for her, friends, work, and every occasion, each vetted against real owner reviews.",
+  description: "every find in one place, newest first - hand-picked gifts for her, for him, for mom, for dad, and every occasion, each vetted against real owner reviews.",
   alternates: { canonical: "/gear" },
 };
 

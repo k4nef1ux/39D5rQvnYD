@@ -50,7 +50,7 @@ export const site: SiteConfig = {
   url: "https://findshq.com",
   title: "findshq - gifts worth giving",
   description:
-    "hand-picked gifts that look and feel expensive - vetted against real owner reviews and sorted for him, for her, friends, work, and every occasion.",
+    "hand-picked gifts that look and feel expensive - vetted against real owner reviews and sorted for her, for him, for mom, for dad, and every occasion.",
   tagline: "gifts worth giving.",
   footerEcho: "found. vetted. worth giving.",
   latestCount: 6,
@@ -63,14 +63,17 @@ export const site: SiteConfig = {
   analytics: { gaId: "", clarityId: "", ahrefsKey: "" },
   ogHeadline: { lead: "gifts worth", accent: "giving." },
   llmsIntro:
-    "Hand-picked gifts, vetted against real owner reviews. A gift for him, for her, friends, coworkers, and every occasion.",
+    "Hand-picked gifts, vetted against real owner reviews. A gift for her, for him, for mom, for dad, and every occasion.",
   nav: [
-    { label: "for him", href: "/tags/for-him", order: 2 },
-    { label: "for her", href: "/tags/for-her", order: 3 },
-    { label: "for friends", href: "/tags/for-friends", order: 4 },
-    { label: "work gifts", href: "/tags/work-gifts", order: 5 },
+    { label: "for her", href: "/tags/for-her", order: 2 },
+    { label: "for him", href: "/tags/for-him", order: 3 },
+    { label: "for mom", href: "/tags/for-mom", order: 4 },
+    { label: "for dad", href: "/tags/for-dad", order: 5 },
     { label: "occasions", href: "/tags/occasions", order: 6 },
     { label: "hobbies", href: "/tags/hobbies", order: 7 },
+    // display label carries the $; the tag itself is "under 50" so the hub
+    // URL stays clean (/tags/under-50) - see the category rule in CLAUDE.md
+    { label: "under $50", href: "/tags/under-50", order: 8 },
     // `about` is a content page flagged nav:true - it merges in automatically.
   ],
   links: [],

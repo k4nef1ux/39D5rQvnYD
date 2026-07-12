@@ -9,7 +9,7 @@ date: 2026-06-01
 description: "findshq is a curated gift index - a short list of things worth giving, sorted by who they are for and the occasion, each vetted before it earns a place."
 ---
 
-findshq is a curated gift index. The idea is simple: gifting is hard, and the internet is loud, so we keep a short list of things worth giving and sort it by who it is for - him, her, friends, coworkers - and by the occasions and hobbies that bring people together. When you know the person but not the present, this is where you start.
+findshq is a curated gift index. The idea is simple: gifting is hard, and the internet is loud, so we keep a short list of things worth giving and sort it by who it is for - her, him, mom, dad - and by the occasions and hobbies that bring people together. When you know the person but not the present, this is where you start.
 
 Everything here is picked, not padded. We would rather show you ten gifts that earned their place than bury you in a hundred filler links. If something is generic, overpriced, or the kind of thing that ends up in a drawer, it does not make the list. The goal is a shortlist you can trust, so you can stop scrolling and go back to your life.
 

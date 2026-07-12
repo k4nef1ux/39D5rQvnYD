@@ -19,21 +19,28 @@ export default function GiftHero({ find }: { find?: HeroFind }) {
       <div className="ghero-grid">
         <div className="ghero-copy">
           <p className="ghero-eyebrow">the curated gift index</p>
+          {/* the hero commits to ONE niche, spoken to specifically - the
+              rankable version of this page. Swap the niche here if the site
+              lands on a different one; the structure stays. */}
           <h1 className="ghero-title">
-            gifts worth <span className="ghero-accent">giving.</span>
+            gifts that look expensive.{" "}
+            <span className="ghero-accent">under $50.</span>
           </h1>
+          {/* proof above the fold - vetting-voiced, never fabricated
+              ownership. If we start buying and testing products for real,
+              THEN this line can say so (see CLAUDE.md review policy). */}
           <p className="ghero-lede">
-            every find here earned its place - checked against real owner
-            reviews, priced honestly, chosen like it&apos;s for someone we know.
-            for him, for her, for everyone on the list.
+            we read the one-star reviews first - the complaints, the
+            month-three failures, the detail the product page hides. what
+            survives goes on the list. nothing that ends up in a drawer.
           </p>
           <div className="ghero-cta">
-            <a className="btn-gold" href="#stream">
-              browse the finds<span aria-hidden="true"> {"→"}</span>
-            </a>
-            <Link className="btn-ghost" href="/tags/occasions">
-              shop by occasion
+            <Link className="btn-gold" href="/quiz">
+              take the 30-second gift quiz
             </Link>
+            <a className="btn-ghost" href="#stream">
+              browse the vetted picks<span aria-hidden="true"> {"→"}</span>
+            </a>
           </div>
         </div>
 

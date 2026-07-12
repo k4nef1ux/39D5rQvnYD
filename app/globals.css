@@ -1483,33 +1483,6 @@ a { color: inherit; text-decoration: none; }
   .ghero-tile { aspect-ratio: 5 / 4; }
 }
 
-/* ---- department strip: the index of rooms ---- */
-.cat-strip {
-  max-width: var(--measure-wide); margin: 0 auto; padding: 4vh var(--pad) 1vh;
-  display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px;
-}
-.cat-tile {
-  display: flex; flex-direction: column; gap: 7px;
-  padding: 20px 20px 22px; border-radius: 10px;
-  background: transparent; border: 1px solid var(--faint-2);
-  transition: border-color 0.25s var(--ease-out), transform 0.25s var(--ease-out),
-              background 0.25s var(--ease-out);
-}
-.cat-tile:hover {
-  border-color: rgba(216,180,127,0.45); background: var(--panel);
-  transform: translateY(-2px);
-}
-.cat-name {
-  font-family: var(--font-serif), 'Fraunces', serif; font-weight: 400;
-  color: var(--ink); font-size: 18px; letter-spacing: -0.01em;
-}
-.cat-note {
-  font-size: 10.5px; font-weight: 500; color: var(--dim);
-  letter-spacing: 0.12em; text-transform: uppercase;
-}
-@media (max-width: 1100px) { .cat-strip { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 900px) { .cat-strip { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .cat-strip { grid-template-columns: 1fr; } }
 
 /* ---- the stream: one column of large vitrine cards ---- */
 #stream { scroll-margin-top: 84px; }
@@ -1637,3 +1610,128 @@ a { color: inherit; text-decoration: none; }
   .post-plaque { padding: 16px 18px; }
   .post-plaque .shop { width: 100%; justify-content: center; }
 }
+
+/* ---- lane chips: the taxonomy as a quiet pill row under the niche hero ---- */
+.lane-chips {
+  max-width: var(--measure-wide); margin: 0 auto; padding: 3vh var(--pad) 1vh;
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+}
+.lane-chip {
+  font-family: var(--font-mono), 'IBM Plex Mono', monospace;
+  font-size: 11.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--body); border: 1px solid var(--faint); border-radius: 999px;
+  padding: 9px 18px; white-space: nowrap;
+  transition: color 0.25s var(--ease-out), border-color 0.25s var(--ease-out),
+              transform 0.25s var(--ease-out);
+}
+.lane-chip:hover { color: var(--phos); border-color: rgba(216,180,127,0.5); transform: translateY(-1px); }
+
+/* ---- the guides row: vetted roundups with the cut-count badge ---- */
+.guide-row { max-width: var(--measure-wide); margin: 0 auto; padding: 4vh var(--pad) 0; }
+.guide-head { margin-bottom: 18px; }
+.guide-grid {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+.guide-card {
+  position: relative; display: flex; flex-direction: column; gap: 10px;
+  padding: 20px 22px 18px; border: 1px solid var(--faint-2); border-radius: 12px;
+  background: var(--panel);
+  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+.guide-card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px;
+  background: var(--edge-gold); opacity: 0.55;
+}
+.guide-card:hover { border-color: rgba(216,180,127,0.4); transform: translateY(-2px); }
+/* the trust element: what got cut, said up front */
+.guide-badge {
+  align-self: flex-start;
+  font-family: var(--font-mono), 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--phos); border: 1px solid rgba(216,180,127,0.4);
+  border-radius: 3px; padding: 4px 8px;
+}
+.guide-title {
+  font-family: var(--font-serif), 'Fraunces', serif; font-weight: 400;
+  font-size: 19px; line-height: 1.25; color: var(--ink); letter-spacing: -0.01em;
+}
+.guide-card:hover .guide-title { color: var(--phos); }
+.guide-desc {
+  font-family: var(--font-serif), 'Fraunces', serif; font-style: italic; font-weight: 300;
+  font-size: 13.5px; line-height: 1.5; color: var(--dim);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.guide-meta {
+  margin-top: auto; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* ---- from the vetting file: one pick, its honest caveat ---- */
+.vetting { max-width: var(--measure-wide); margin: 0 auto; padding: 3vh var(--pad) 0; }
+.vetting-box {
+  position: relative; border: 1px solid var(--faint-2); border-radius: 12px;
+  padding: 22px 26px 20px; background: var(--panel);
+}
+.vetting-box::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px;
+  background: var(--edge-gold);
+}
+.vetting-label {
+  font-size: 10.5px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--phos); margin-bottom: 10px;
+}
+.vetting-title {
+  display: inline-block;
+  font-family: var(--font-serif), 'Fraunces', serif; font-weight: 400;
+  font-size: 20px; line-height: 1.25; color: var(--ink); letter-spacing: -0.01em;
+  transition: color 0.25s ease;
+}
+.vetting-title:hover { color: var(--phos); }
+.vetting-text {
+  margin-top: 8px; max-width: 72ch;
+  font-family: var(--font-serif), 'Fraunces', serif; font-style: italic; font-weight: 300;
+  font-size: 15px; line-height: 1.6; color: var(--body);
+}
+.vetting-marks {
+  display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid var(--faint-2);
+  font-size: 10.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* ---- newsletter header (pun voice lives here) ---- */
+.signup-head { max-width: var(--measure); margin: 0 auto; padding: 0 var(--pad) 14px; }
+.signup-title {
+  font-family: var(--font-serif), 'Fraunces', serif; font-weight: 400;
+  font-size: 20px; color: var(--ink); letter-spacing: -0.01em;
+}
+.signup-sub { margin-top: 4px; font-size: 12px; letter-spacing: 0.08em; color: var(--dim); }
+
+/* ---- the 30-second gift quiz ---- */
+.quiz { margin-top: 4vh; }
+.quiz-count {
+  font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--phos); margin-bottom: 14px;
+}
+.quiz-question {
+  font-family: var(--font-serif), 'Fraunces', serif; font-weight: 300;
+  font-size: clamp(28px, 4vw, 44px); line-height: 1.05; letter-spacing: -0.02em;
+  color: var(--ink); margin-bottom: 26px;
+}
+.quiz-options { display: flex; flex-wrap: wrap; gap: 12px; }
+.quiz-chip {
+  cursor: pointer; background: transparent;
+  font-family: var(--font-mono), 'IBM Plex Mono', monospace;
+  font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--body); border: 1px solid var(--faint); border-radius: 999px;
+  padding: 13px 24px;
+  transition: color 0.2s var(--ease-out), border-color 0.2s var(--ease-out),
+              transform 0.2s var(--ease-out);
+}
+.quiz-chip:hover { color: var(--phos); border-color: rgba(216,180,127,0.55); transform: translateY(-2px); }
+.quiz-line {
+  font-family: var(--font-serif), 'Fraunces', serif; font-style: italic; font-weight: 300;
+  font-size: 17px; color: var(--dim); margin-bottom: 26px;
+}
+.quiz-actions { display: flex; gap: 14px; flex-wrap: wrap; }

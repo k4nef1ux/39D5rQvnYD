@@ -9,7 +9,7 @@ merchant: amazon
 date: 2026-05-26
 cover: "/images/beginner-calligraphy-kit/cover.webp"
 description: "A complete modern-calligraphy starter kit with pens, nibs, ink, and guided worksheets - a calming, screen-free gift for the friend craving a new creative hobby."
-tags: [hobbies, creative, stationery, learning]
+tags: [hobbies, under 50, creative, stationery, learning]
 featured: false
 rating: 4.5
 ---

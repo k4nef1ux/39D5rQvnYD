@@ -45,6 +45,15 @@ function ReachSignupInner() {
 
   return (
     <section className="signup" aria-label="subscribe" ref={ref}>
+      {/* the puns live here (newsletter voice + microcopy), never plastered
+          across the layout - the site stays credible enough to take a
+          recommendation from */}
+      <div className="signup-head">
+        <p className="signup-title">
+          we&apos;ve got great presents. and even better presence.
+        </p>
+        <p className="signup-sub">one vetted pick + one terrible pun, weekly.</p>
+      </div>
       <div className="signup-inner">
         {load ? (
           <iframe

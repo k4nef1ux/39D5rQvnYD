@@ -88,7 +88,11 @@ Three `type`s:
   `price`, `buyUrl` (the outbound retailer link), `merchant` (e.g. amazon),
   `category` (for him/her/them/etc), `rating`. Body = why it makes a good gift,
   who it's for, what to know before buying, a short verdict.
-- **`note`** - gift guides / roundups (editorial, no single product).
+- **`note`** - gift guides / roundups (editorial, no single product). Guides
+  carry a `badge` frontmatter field ("7 vetted, 3 cut", "flaws listed") shown
+  on the homepage guide cards - keep it a claim the body actually backs up,
+  and always include the cuts with reasons: a list that never cuts anything
+  reads as an ad.
 - **`page`** - about + legal/trust pages.
 
 Frontmatter fields: `title, slug, type (gift|note|page), category, date,
@@ -193,9 +197,24 @@ q1rk held ~99 mobile / 100 desktop; hold the same bar. Rules:
 
 ## Key components
 - `components/GiftHero.tsx` - the homepage hero (server component, LCP block):
-  serif statement + CTAs beside the "find of the week" vitrine (first featured
-  gift), plaque overlaid on the tile's lower edge. There is NO HeroSlider here
-  (q1rk's slider was removed with the clone).
+  the hero COMMITS TO ONE NICHE, spoken to specifically (currently "gifts that
+  look expensive. under $50.") - the rankable version of the page; swap the
+  niche in this component if the site lands on another. Proof line above the
+  fold is VETTING-voiced ("we read the one-star reviews first"), never
+  fabricated ownership - if products get genuinely bought/tested, the copy can
+  and should upgrade to firsthand claims. Beside it: the "find of the week"
+  vitrine (first featured GIFT - guides can be featured without stealing the
+  hero). There is NO HeroSlider here.
+- **Homepage anatomy** (`app/page.tsx`): niche hero -> lane chip row -> "the
+  guides" row (latest notes with their `badge` frontmatter - the cut-count/
+  flaws-listed trust element; hidden while no notes exist) -> "from the vetting
+  file" snippet (one pick + its honest caveat, hand-rotated) -> the stream +
+  rail -> charge. Puns live ONLY in newsletter voice + microcopy
+  (`ReachSignup` header, quiz lede) - never plastered across the layout.
+- `components/GiftQuiz.tsx` + `app/quiz/page.tsx` - the 30-second gift quiz:
+  three chip questions, no backend, routes to the lane/tag hub that fits. The
+  pinterest/share front door and (once the Reach form exists) the
+  email-capture engine.
 - `components/PostCard.tsx` - two shapes: the PRODUCT card (vitrine image +
   plaque: title/price head, italic desc, meta + shop foot) used in the
   one-column `.card-stream`, and the editorial card for notes. The card is

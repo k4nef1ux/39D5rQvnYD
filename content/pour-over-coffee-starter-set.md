@@ -9,7 +9,7 @@ merchant: amazon
 date: 2026-05-22
 cover: "/images/pour-over-coffee-starter-set/cover.webp"
 description: "A complete pour-over kit with glass dripper, carafe, and filters - a warm, hands-on gift for the coffee lover ready to slow down their morning ritual."
-tags: [hobbies, coffee, kitchen, morning]
+tags: [hobbies, under 50, coffee, kitchen, morning]
 featured: true
 rating: 4.7
 ---

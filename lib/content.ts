@@ -52,11 +52,14 @@ export type Frontmatter = {
   // "sponsored" disclosure on the hero slide (plain disclosure, and matches
   // the rel="sponsored" link attribution).
   sponsored?: boolean;
+  // short vetting badge shown on guide cards (e.g. "3 cut in vetting",
+  // "flaws listed") - the trust element; keep it a claim the body backs up.
+  badge?: string;
   // hero image shown atop the post + used as the link/social cover (a path
   // under /public, e.g. "/images/my-slug/cover.webp", or an image route)
   cover?: string;
   // --- gift/product fields (type: "gift") ---
-  // which gift lane it belongs to: "for him" | "for her" | "for friends" | "work gifts" |
+  // which gift lane it belongs to: "for her" | "for him" | "for mom" | "for dad" | "under $50" |
   // "occasions" | "hobbies". Also carried as the first tag so /tags/for-him
   // acts as the category page.
   category?: string;
@@ -194,6 +197,7 @@ export async function getAllPages(): Promise<Page[]> {
         tags: normalizeTags(fm.tags),
         featured: fm.featured ?? false,
         sponsored: fm.sponsored ?? false,
+        badge: fm.badge || "",
         cover: fm.cover || "",
         category: fm.category || "",
         price: fm.price || "",

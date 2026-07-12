@@ -9,7 +9,7 @@ merchant: amazon
 date: 2026-06-10
 cover: "/images/birth-flower-necklace/cover.webp"
 description: "A dainty gold-tone necklace stamped with her birth-month flower - a quietly personal keepsake for birthdays, anniversaries, or just because."
-tags: [for her, jewelry, personalized, keepsake]
+tags: [for her, under 50, jewelry, personalized, keepsake]
 featured: true
 rating: 4.8
 ---

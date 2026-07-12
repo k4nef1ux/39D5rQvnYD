@@ -2,14 +2,14 @@
 title: cloud-soft weighted blanket
 slug: cloud-soft-weighted-blanket
 type: gift
-category: for friends
+category: for mom
 price: "$59"
 buyUrl: "https://www.amazon.com/dp/B08WEIGHT01"
 merchant: amazon
 date: 2026-06-18
 cover: "/images/cloud-soft-weighted-blanket/cover.webp"
-description: "A gentle 15lb weighted blanket that feels like a warm hug, perfect for the friend who runs anxious, sleeps light, or just loves to burrow in on cold nights."
-tags: [for friends, cozy, home, sleep]
+description: "A gentle 15lb weighted blanket that feels like a warm hug, perfect for anyone who runs anxious, sleeps light, or just loves to burrow in on cold nights."
+tags: [for mom, cozy, home, sleep]
 featured: true
 rating: 4.6
 ---
