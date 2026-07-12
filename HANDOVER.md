@@ -5,9 +5,9 @@ reference is **CLAUDE.md**.
 
 ## what findshq is
 A **gift-affiliate site styled as a private showroom** - hand-picked gifts
-presented like pieces in a case, sorted **for him / for her / for friends /
-work gifts / occasions / hobbies** (labels must map to real search queries -
-see the category rule in CLAUDE.md). Tagline: **"gifts worth giving."** Each gift links out
+presented like pieces in a case, sorted **for her / for him / for mom /
+for dad / occasions / hobbies / under $50** (labels must map to real search
+queries - see the category rule in CLAUDE.md). Tagline: **"gifts worth giving."** Each gift links out
 to a retailer (amazon etc.) via an affiliate link (bare by default - see the
 affiliate rules in CLAUDE.md).
 

@@ -6,9 +6,10 @@ not in `public/`), so visitors can't see it - only people with repo access.
 
 ## What this is
 **findshq.com** - a **gift-affiliate site** styled as a private showroom:
-hand-picked gifts presented like pieces in a case, sorted **for him / for her /
-for friends / work gifts / occasions / hobbies**. Each gift is a product that links out to a
-retailer (amazon etc.); findshq earns via affiliate programs. The tagline is
+hand-picked gifts presented like pieces in a case, sorted **for her / for him /
+for mom / for dad / occasions / hobbies / under $50**. Each gift is a product
+that links out to a retailer (amazon etc.); findshq earns via affiliate
+programs. The tagline is
 **"gifts worth giving."**
 
 The look is **modern, futuristic, ultra-wealthy minimalist**: cold obsidian
@@ -88,7 +89,7 @@ Three `type`s:
 
 - **`gift`** - a product with a review body. Frontmatter carries commerce fields:
   `price`, `buyUrl` (the outbound retailer link), `merchant` (e.g. amazon),
-  `category` (for him/her/them/etc), `rating`. Body = why it makes a good gift,
+  `category` (the lane it leads with), `rating`. Body = why it makes a good gift,
   who it's for, what to know before buying, a short verdict.
 - **`note`** - gift guides / roundups (editorial, no single product). Guides
   carry a `badge` frontmatter field ("7 vetted, 3 cut", "flaws listed") shown
@@ -102,16 +103,18 @@ description, tags, featured, cover, draft`, plus gift commerce fields
 `price, buyUrl, merchant, rating`, and `sponsored` (surfaces a visible
 "sponsored" disclosure). `draft: true` hides a post in production.
 
-**Categories are TAGS.** for him / for her / for friends / work gifts /
-occasions / hobbies are implemented as tags -> `/tags/[tag]` pages; the nav
-links to `/tags/for-him` etc. (see `config/site.ts nav`). There is no separate
-"category" route.
+**Categories are TAGS.** for her / for him / for mom / for dad / occasions /
+hobbies / under $50 are implemented as tags -> `/tags/[tag]` pages; the nav
+links to `/tags/for-her` etc. (see `config/site.ts nav`). There is no separate
+"category" route. NOTE the under-$50 lane: the tag string is "under 50" so the
+hub URL stays clean (`/tags/under-50`); only display labels carry the `$`.
 **Category labels must be terms real people search (owner feedback, jul 2026):**
 never invent an umbrella label ("for them") when a search-real lane exists
 ("gifts for friends", "work gifts"). Before adding a lane, check it maps to an
 actual query; apply the same test to any new tag, nav label, or page title.
 Next lanes to open once content exists to fill them: **for kids**, **for
-couples** (don't ship an empty hub - thin pages hurt more than a missing lane).
+couples**, **for friends**, **work gifts** (don't ship an empty hub - thin
+pages hurt more than a missing lane).
 
 **SEO length discipline:** the layout appends ` - findshq` to every title, so
 keep frontmatter `title` short (rendered `<title>` <= 60 chars) and
