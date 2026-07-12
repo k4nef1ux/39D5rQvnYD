@@ -4,7 +4,7 @@
 for him / for her / for them / occasions / hobbies. **"gifts worth giving."**
 
 Built on Next.js 15 (App Router), TypeScript, React 19. Runs in **server mode**
-(`next start`) on Hostinger - not a static export.
+on Vercel - not a static export.
 
 For architecture and brand rules see **CLAUDE.md**; for current state and next
 steps see **HANDOVER.md**.
@@ -49,7 +49,7 @@ production. Categories (for him/her/them/occasions/hobbies) are tags ->
 `/tags/[tag]`. See CLAUDE.md for the full frontmatter and affiliate-link rules.
 
 ## environment variables
-Engagement (upvotes/views) uses Upstash Redis. Set these in the Hostinger hPanel
+Engagement (upvotes/views) uses Upstash Redis. Set these in the Vercel project's env vars
 Node app environment (NOT in git). If absent, engagement degrades to no-ops and
 the site still builds and runs.
 
@@ -61,8 +61,8 @@ UPSTASH_REDIS_REST_TOKEN=...
 Analytics ids (GA4 / Clarity / Ahrefs) live in `config/site.ts` and are blank
 until findshq has its own properties - never inherit a sibling site's ids.
 
-## deploy (Hostinger)
-Hostinger runs the app in server mode and **redeploys on push** (~2 min).
+## deploy (Vercel)
+Vercel builds and **redeploys on every push to `main`**.
 Working norm: make the change, `npm run build`, verify, then push the dev branch
 `claude/gifts-site-dark-theme-bdd546`. HTML is served no-cache while `/_next/*`
 stays immutable, so hashed chunks never go stale across deploys.

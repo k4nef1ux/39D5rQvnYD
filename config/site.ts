@@ -59,9 +59,9 @@ export const site: SiteConfig = {
   feed: { initial: 8, step: 8 },
   author: "findshq",
   locale: "en_US",
-  // findshq's OWN GA4 property (set jul 2026). Clarity/Ahrefs still pending
-  // their own ids - blank disables each. Never paste the parent site's.
-  analytics: { gaId: "G-5XQ3Z6NZQ2", clarityId: "", ahrefsKey: "" },
+  // findshq's OWN GA4 + Clarity properties (set jul 2026). Ahrefs still
+  // pending its id - blank disables it. Never paste the parent site's.
+  analytics: { gaId: "G-5XQ3Z6NZQ2", clarityId: "xletbas1ui", ahrefsKey: "" },
   ogHeadline: { lead: "gifts worth", accent: "giving." },
   llmsIntro:
     "Hand-picked gifts, vetted against real owner reviews. A gift for her, for him, for mom, for dad, and every occasion.",

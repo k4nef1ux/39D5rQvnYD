@@ -6,6 +6,7 @@
 // Lighthouse budget intact. Withdrawing consent sets the gtag kill-switch and
 // stops loading on subsequent navigations.
 import Script from "next/script";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { useEffect, useState } from "react";
 import { getConsent, CONSENT_CHANGE, type Consent } from "@/lib/consent";
 
@@ -38,6 +39,12 @@ export default function Analytics({
 
   return (
     <>
+      {/* Vercel Analytics - cookieless page views/visitors, served same-origin
+          from /_vercel/insights/* (CSP 'self' covers it). It needs no id: it
+          activates because the site is DEPLOYED ON VERCEL. Kept behind the
+          same consent gate as everything else so the banner's "nothing loads
+          until you allow" promise stays true. */}
+      <VercelAnalytics />
       {gaId && (
         <>
           <Script

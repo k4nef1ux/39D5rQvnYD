@@ -31,10 +31,11 @@ affiliate rules in CLAUDE.md).
   `/public/images/<slug>/cover.webp`. REPLACE the placeholder buyUrls with real
   product links before promoting any page.
 - `lib/tag-meta.ts` covers all 31 content tags (seo-check enforces coverage).
-- GA4 is LIVE: findshq's own property (`G-5XQ3Z6NZQ2` in `config/site.ts`),
-  loaded consent-gated + lazyOnload (zero cost before opt-in). Clarity/Ahrefs
-  ids still blank; newsletter FORM_URL blank (create findshq's own Reach
-  form); IndexNow key not configured yet.
+- Analytics LIVE (all consent-gated, zero cost before opt-in): GA4
+  (`G-5XQ3Z6NZQ2`), Microsoft Clarity (`xletbas1ui`), and Vercel Analytics
+  (activates via the Vercel deploy, no id). Ahrefs id still blank;
+  newsletter FORM_URL blank (create findshq's own Reach form); IndexNow key
+  not configured yet.
 
 ## content voice (see CLAUDE.md for the full policy)
 Quiet confidence, plain english, lowercase, hyphens only, no emoji. Reviews
@@ -58,12 +59,11 @@ is the strongest version and Google's reviews system rewards it.**
    with real product imagery where programs provide it. Strongly consider
    BUYING the under-$50 picks - firsthand photos/measurements unlock the
    "bought it ourselves" homepage copy and the Wirecutter trust tier.
-2. Hostinger: point findshq.com at this repo (branch merge -> auto-deploy),
-   set `UPSTASH_REDIS_REST_URL/TOKEN` env vars, create the Reach form, add an
-   IndexNow key.
-3. Remaining analytics properties (Clarity + Ahrefs) -> `config/site.ts`.
+2. Vercel (the site's host): set `UPSTASH_REDIS_REST_URL/TOKEN` in the
+   project's env vars, create the Reach form, add an IndexNow key.
+3. Remaining analytics property (Ahrefs) -> `config/site.ts`.
 4. Amazon associates: apply once the site has content; until approved, links
    ship bare (seo-check blocks unapproved referral codes).
 5. Content engine: gift guides (`note` type) targeting long-tail gift queries;
    Q4 is the season - pages need to be indexed by september.
-6. Throttled Lighthouse pass on the deployed host (hold the parent's ~99 mobile bar).
+6. Throttled Lighthouse pass on the Vercel deploy (hold the parent's ~99 mobile bar).

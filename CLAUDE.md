@@ -35,15 +35,16 @@ state.
 
 ## Stack & hosting
 - **Next.js 15 App Router**, TypeScript, React 19.
-- **Server mode** (`next start`) on **Hostinger** - NOT static export
+- Hosted on **Vercel** (owner, jul 2026) - NOT static export
   (`output:'export'` caused NoFallbackError on the parent). API routes work.
+  `npm run start` still serves the production build locally for verification.
 - Git: this repo's `origin`, branch **`main`** (default).
   Working norm: build -> verify -> push straight to `main`. (The old "5 minute
   offers" static site that previously lived on main is gone; recoverable at
   commit `d19668c` if ever needed.)
-- **Pushing auto-deploys** (Hostinger redeploys on push, ~2 min). Working norm:
-  build -> verify -> push. Node >= 18.18. `npm run build` / `npm run start`
-  (port 3000).
+- **Pushing to `main` auto-deploys** (Vercel's git integration builds on
+  push). Working norm: build -> verify -> push. Node >= 18.18.
+  `npm run build` / `npm run start` (port 3000).
 
 ## Non-negotiable brand rules (consistency matters a LOT)
 - **lowercase** for `findshq`, nav, labels, most UI text.
@@ -151,7 +152,8 @@ The parent site held ~99 mobile / 100 desktop; hold the same bar. Rules:
   findshq until it has its OWN GA4/Clarity/Ahrefs properties - **never inherit
   the parent site's ids**. Empty id disables each tag (costs the budget nothing). New
   third-party tag -> also extend the CSP in `next.config.mjs`.
-- The newsletter (Hostinger Reach) is a same-origin iframe, lazy-loaded on
+- The newsletter (Hostinger Reach - an email product, independent of where
+  the site is hosted) is a same-origin iframe, lazy-loaded on
   scroll so it stays out of the audit.
 - Engagement counts load after paint via one batched request (see below).
 - CSS is inlined (`experimental.inlineCss`); one file `app/globals.css`.
@@ -191,8 +193,8 @@ The parent site held ~99 mobile / 100 desktop; hold the same bar. Rules:
   llms intro).
 - **Security**: CSP + headers in `next.config.mjs`. HTML served
   `Cache-Control: public, max-age=0, must-revalidate` (no `s-maxage` - the
-  Hostinger CDN must not cache HTML referencing hashed chunks a later deploy
-  deletes). `/_next/*` stays immutable.
+  CDN must not cache HTML referencing hashed chunks a later deploy deletes;
+  Vercel's CDN respects these headers). `/_next/*` stays immutable.
 
 ## Engagement (upvotes + views + share)
 - **Store**: Upstash Redis (REST, no SDK) via `lib/engage.ts`. Keys
@@ -204,8 +206,8 @@ The parent site held ~99 mobile / 100 desktop; hold the same bar. Rules:
 - **Client**: `components/engage-batch.ts` collects slugs mounted within ~60ms
   into ONE request, fired after paint. `Engage.tsx` (upvote + share + copy),
   `Views.tsx` (per-post views). Share = X + Threads + copy-link (no Instagram).
-- **Env** (set in Hostinger hPanel, NOT git): `UPSTASH_REDIS_REST_URL`,
-  `UPSTASH_REDIS_REST_TOKEN`.
+- **Env** (set in the Vercel project's Environment Variables, NOT git):
+  `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`.
 
 ## Key components
 - `components/GiftHero.tsx` - the homepage hero (server component, LCP block):
@@ -247,7 +249,11 @@ The parent site held ~99 mobile / 100 desktop; hold the same bar. Rules:
   R = random, H = home, "?" cheat-sheet. Keep `ShortcutsHelp` GROUPS in sync
   with any binding change (it's what users see).
 - `components/Analytics.tsx` + `ConsentBanner.tsx` / `ConsentLink.tsx` +
-  `lib/consent.ts` - consent-gated analytics loading.
+  `lib/consent.ts` - consent-gated analytics loading: GA4 + Clarity (ids in
+  `config/site.ts`) + Vercel Analytics (no id - activates by being deployed
+  on Vercel; served same-origin from `/_vercel/insights/*`, so it 404s
+  harmlessly on local `next start`). ALL analytics ride the same gate so the
+  banner's "nothing loads until you allow" promise stays true.
 - `components/ReachSignup.tsx` - lazy same-origin newsletter iframe. FORM_URL
   is BLANK (renders nothing) until findshq has its own Hostinger Reach form -
   never reuse the parent site's form id (signups would land in the wrong list).
