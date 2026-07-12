@@ -4,6 +4,7 @@
 // also get tag chips, prev/next, and continuous "next post" reading.
 
 import Link from "next/link";
+import { displayType } from "@/lib/kind";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
@@ -87,9 +88,9 @@ export default async function ContentPage({
   const isPost =
     page.type === "note" || page.type === "gear" || page.type === "gift";
   const backHref =
-    page.type === "note" ? "/notes" : isPost ? "/gear" : "/";
+    page.type === "note" ? "/guides" : isPost ? "/allfinds" : "/";
   const backLabel =
-    page.type === "note" ? "all notes" : isPost ? "all finds" : "home";
+    page.type === "note" ? "all guides" : isPost ? "all finds" : "home";
 
   // the discovery rail (sidebar) shows on posts AND standalone pages
   // (about / legal), so those don't sit as a lone narrow column on wide
@@ -168,14 +169,14 @@ export default async function ContentPage({
     >
       {isPost && <ReadingProgress />}
       <div className="page-tag">
-        findshq &nbsp;//&nbsp; {page.type === "page" ? "the index" : page.type}
+        findshq &nbsp;//&nbsp; {page.type === "page" ? "the index" : displayType(page.type)}
       </div>
 
       <h1 className="page-title">{page.title}</h1>
 
       {isPost && (
         <div className="post-meta">
-          <span>{page.type}</span>
+          <span>{displayType(page.type)}</span>
           <span className="dot">·</span>
           <Link href="/about" rel="author" className="byline">
             by {site.author}
@@ -275,7 +276,7 @@ export default async function ContentPage({
             {related.map((p) => (
               <li key={p.slug}>
                 <Link href={`/${p.slug}`} className="related-link">
-                  <span className="related-type">{p.type}</span>
+                  <span className="related-type">{displayType(p.type)}</span>
                   <span className="related-title">{p.title}</span>
                 </Link>
               </li>

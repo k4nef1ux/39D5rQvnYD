@@ -2,6 +2,7 @@
 // restrained modules: top (featured) posts, latest posts, tag cloud, plus a
 // small identity/echo card. No imagery, single accent - same dossier idiom.
 import Link from "next/link";
+import { displayType } from "@/lib/kind";
 import { site } from "@/config/site";
 import TagCloud from "@/components/TagCloud";
 import StickyRail from "@/components/StickyRail";
@@ -23,7 +24,7 @@ function PostList({ posts }: { posts: SidebarPost[] }) {
         <li key={p.slug}>
           <Link href={`/${p.slug}`} className="rail-item">
             <span className="rail-item-meta">
-              <span className="rail-item-type">{p.type}</span>
+              <span className="rail-item-type">{displayType(p.type)}</span>
               {p.updated && p.updated !== p.date ? (
                 <span className="rail-item-date">updated {fmtDate(p.updated)}</span>
               ) : p.date ? (

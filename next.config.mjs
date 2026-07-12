@@ -44,11 +44,10 @@ const nextConfig = {
         destination: "https://findshq.com/:path*",
         statusCode: 301,
       },
-      // slugs renamed when "honest" was dropped from the brand. 301 the old
-      // urls so any indexed entry / inbound link lands on the new post.
-      { source: "/honest-claude-code-review", destination: "/claude-code-review", permanent: true },
-      { source: "/honest-hostinger-review", destination: "/hostinger-review", permanent: true },
-      { source: "/make-money-with-ai-honest-guide", destination: "/make-money-with-ai-guide", permanent: true },
+      // index routes renamed from the q1rk clone's names to findshq's own -
+      // 301 the old paths so typed links and any early crawls land right.
+      { source: "/gear", destination: "/allfinds", permanent: true },
+      { source: "/notes", destination: "/guides", permanent: true },
     ];
   },
   async headers() {

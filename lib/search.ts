@@ -1,5 +1,5 @@
 // lib/search.ts
-// Builds a static search index over content POSTS ONLY (log + note), at build
+// Builds a static search index over content POSTS ONLY (gifts + notes), at build
 // time. No server, no third party - the index is shipped to the client and
 // filtered there. Privacy + simplicity by design.
 
@@ -28,7 +28,10 @@ function stripMarkdown(md: string): string {
 export async function getSearchIndex(): Promise<SearchDoc[]> {
   const pages = await getAllPages();
   return pages
-    .filter((p) => p.type === "log" || p.type === "note")
+    // gifts are the catalog - they MUST be findable (this filter arrived from
+    // q1rk where posts were log/note; excluding "gift" made every product
+    // invisible to search, the palette, and the R random-post key)
+    .filter((p) => p.type === "log" || p.type === "note" || p.type === "gear" || p.type === "gift")
     .map((p) => {
       const body = stripMarkdown(p.raw);
       // fold the post's tags into the haystack so searching a tag word (e.g.

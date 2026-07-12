@@ -7,12 +7,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { SearchDoc } from "@/lib/search";
+import { site } from "@/config/site";
 import { resultKind } from "@/lib/kind";
 
+// jump targets: the real nav (home + lanes, from config so it can't drift)
+// plus the indexes and about, which live outside config/site.ts nav.
 const NAV = [
-  { href: "/", label: "home" },
-  { href: "/notes", label: "notes" },
-  { href: "/gear", label: "gear" },
+  ...site.nav.map((i) => ({ href: i.href, label: i.label })),
+  { href: "/quiz", label: "gift quiz" },
   { href: "/about", label: "about" },
 ];
 

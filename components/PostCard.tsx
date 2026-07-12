@@ -7,6 +7,7 @@
 // The shop button is an outbound affiliate link (rel="sponsored"); the tile +
 // title link to the on-site review page.
 import Link from "next/link";
+import { displayType } from "@/lib/kind";
 import Engage from "@/components/Engage";
 
 export type PostCardData = {
@@ -104,7 +105,7 @@ export default function PostCard({ post }: { post: PostCardData }) {
       ) : null}
       <Link href={`/${post.slug}`} className="card-link">
         <div className="card-top">
-          <span className="card-label">{post.type}</span>
+          <span className="card-label">{displayType(post.type)}</span>
           <span className="card-date">
             {post.updated && post.updated !== post.date
               ? `updated ${fmtDate(post.updated)}`

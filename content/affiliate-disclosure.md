@@ -22,4 +22,4 @@ findshq takes part in the Amazon Associates program, which is designed to let si
 
 The commission never buys a recommendation. We pick each gift because we genuinely think it is worth giving, and then we add the link - not the other way around. Our opinions are our own, and we will always tell you when something is a paid or gifted arrangement if that ever happens.
 
-Supporting findshq through these links is what keeps the site running and the recommendations free to read. Thank you for that. Questions are welcome at admin@umxwu.com.
+Supporting findshq through these links is what keeps the site running and the recommendations free to read. Thank you for that. Questions are welcome at hello@findshq.com.

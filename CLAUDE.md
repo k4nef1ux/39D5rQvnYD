@@ -20,9 +20,11 @@ feature, every stream card, and the gift page's buy bar.
 
 findshq was **cloned from a sibling site, q1rk.com** (a dark matrix/terminal
 blog) and fully re-themed. It reuses q1rk's Next.js 15 App Router engine but is
-a **different brand**. When you see leftover q1rk naming (e.g. the css token
-`--phos`, `/gear` `/notes` route folders), treat it as a holdover from the
-clone, not intent.
+a **different brand**. When you see leftover q1rk naming (e.g. the css
+token `--phos`, the `note` content type rendered as "guide"), treat it as a
+holdover from the clone, not intent. The index routes are findshq's own:
+`/allfinds` (every gift) and `/guides` (every roundup); `/gear` and `/notes`
+301 to them.
 
 Portfolio context: siblings are q1rk.com (blog), q1rkify.com (Shopify),
 umxwu.com (agency). **Git holds only the running site + seeded content** - keep
@@ -168,8 +170,13 @@ q1rk held ~99 mobile / 100 desktop; hold the same bar. Rules:
 - **Routing**: `app/[slug]/page.tsx` renders every content page;
   `dynamicParams = true` on purpose (under `next start`, `false` throws
   NoFallbackError on unknown paths).
-- **Pages**: `/` (hero slider + feed + sidebar), type indexes, `/tags` +
-  `/tags/[tag]` (the category hubs), `/about`. Post and index shells mirror the
+- **Pages**: `/` (niche hero + guides + feed + sidebar), `/allfinds` +
+  `/guides` (type indexes, headed "#all finds" / "#guides"), `/tags` +
+  `/tags/[tag]` (the category hubs), `/quiz`, `/about` (+ its dropdown:
+  privacy-policy, cookie-policy, affiliate-disclosure, terms, contact).
+  Nav order is fixed (owner, jul 2026): home, for her, for him, for mom,
+  for dad, occasions, hobbies, under $50, all finds, guides, about.
+  The ONLY email sitewide is hello@findshq.com. Post and index shells mirror the
   home layout so content left-edges align with the nav logo across pages.
 - **SEO/distribution**: `sitemap.ts`, `robots.ts`, `feed.xml`, `opengraph-image`
   (default + per-post), `llms.txt`, JSON-LD, canonical. Gifts/posts get

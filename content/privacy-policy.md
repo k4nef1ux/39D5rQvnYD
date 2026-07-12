@@ -25,4 +25,4 @@ Any analytics or affiliate partners we use handle data under their own terms. We
 
 ## changes
 
-If our practices change, we will update this page. Questions are welcome at admin@umxwu.com.
+If our practices change, we will update this page. Questions are welcome at hello@findshq.com.

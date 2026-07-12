@@ -75,12 +75,10 @@ export const site: SiteConfig = {
     // display label carries the $; the tag itself is "under 50" so the hub
     // URL stays clean (/tags/under-50) - see the category rule in CLAUDE.md
     { label: "under $50", href: "/tags/under-50", order: 8 },
-    // `about` is a content page flagged nav:true - it merges in automatically.
+    { label: "all finds", href: "/allfinds", order: 9 },
+    { label: "guides", href: "/guides", order: 10 },
+    // `about` is a content page flagged nav:true - it merges in automatically
+    // (order 11 in its frontmatter, so it lands last).
   ],
-  // internal index pages, footer-only (the nav stays lanes-first): the full
-  // product index and the guides index
-  links: [
-    { label: "all finds", href: "/gear" },
-    { label: "guides", href: "/notes" },
-  ],
+  links: [],
 };

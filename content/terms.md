@@ -29,4 +29,4 @@ The words and design on findshq are ours - please do not copy them wholesale. Yo
 
 ## changes
 
-We may update these terms as the site grows. Questions are welcome at admin@umxwu.com.
+We may update these terms as the site grows. Questions are welcome at hello@findshq.com.

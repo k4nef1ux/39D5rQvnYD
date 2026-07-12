@@ -5,6 +5,7 @@
 // continuous-reading stream - so phone users keep meeting discovery instead of
 // scrolling past an infinite feed.
 import Link from "next/link";
+import { displayType } from "@/lib/kind";
 import { site } from "@/config/site";
 import TagCloud from "@/components/TagCloud";
 import { fmtDate } from "@/components/PostCard";
@@ -55,7 +56,7 @@ export default function MobileDiscover({
                 <li key={p.slug}>
                   <Link href={`/${p.slug}`} className="rail-item">
                     <span className="rail-item-meta">
-                      <span className="rail-item-type">{p.type}</span>
+                      <span className="rail-item-type">{displayType(p.type)}</span>
                       {p.updated && p.updated !== p.date ? (
                         <span className="rail-item-date">updated {fmtDate(p.updated)}</span>
                       ) : p.date ? (

@@ -58,7 +58,7 @@ function resolve(a: Record<string, string>): Result {
     useful: { href: "/tags/everyday", label: "everyday gifts", line: "used daily beats displayed forever." },
     fun: { href: "/tags/fun", label: "fun gifts", line: "joy, without the junk drawer." },
   };
-  return byVibe[a.vibe] ?? { href: "/gear", label: "all the finds", line: "the whole case, newest first." };
+  return byVibe[a.vibe] ?? { href: "/allfinds", label: "all the finds", line: "the whole case, newest first." };
 }
 
 export default function GiftQuiz() {

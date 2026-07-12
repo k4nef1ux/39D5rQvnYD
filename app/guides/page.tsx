@@ -1,6 +1,5 @@
-// app/gear/page.tsx - the "all finds" index. Every gift product, newest first,
-// in the vitrine stream beside the shared sidebar. (Route folder is a /gear
-// holdover from the q1rk clone; it serves as findshq's full gift index.)
+// app/guides/page.tsx - the guides index. All type:note posts (vetted
+// roundups), newest first, in the main column beside the shared sidebar.
 import type { Metadata } from "next";
 import {
   getPostsByType,
@@ -14,14 +13,14 @@ import InfiniteFeed from "@/components/InfiniteFeed";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "all the finds",
-  description: "every find in one place, newest first - hand-picked gifts for her, for him, for mom, for dad, and every occasion, each vetted against real owner reviews.",
-  alternates: { canonical: "/gear" },
+  title: "the gift guides - vetted, cuts included",
+  description: "the findshq gift guides: vetted roundups sorted by who it is for and the occasion. every list shows what got cut and why - no filler, no ads in disguise.",
+  alternates: { canonical: "/guides" },
 };
 
-export default async function GearIndex() {
+export default async function NotesIndex() {
   const [posts, featured, latest, tags] = await Promise.all([
-    getPostsByType("gift"),
+    getPostsByType("note"),
     getFeaturedPosts(site.sidebar.topCount),
     getLatestPosts(site.sidebar.latestCount),
     getAllTags(),
@@ -34,14 +33,14 @@ export default async function GearIndex() {
   return (
     <div className="layout layout-index">
       <div className="layout-main">
-        <div className="page-tag">findshq &nbsp;//&nbsp; finds</div>
-        <h1 className="page-title">all the finds</h1>
+        <div className="page-tag">findshq &nbsp;//&nbsp; guides</div>
+        <h1 className="page-title">#guides</h1>
         <p className="lede page-lede">
-          every find, newest first. each one picked slowly and vetted before
-          it earned a place here.
+          vetted roundups, sorted by who it is for. every list shows its cuts
+          and the reasons - a list that never cuts anything is an ad.
         </p>
         {posts.length === 0 ? (
-          <p className="card-desc">no finds yet.</p>
+          <p className="card-desc">no guides yet - the first ones are in vetting.</p>
         ) : (
           <InfiniteFeed
             posts={posts.map((p) => ({
@@ -53,15 +52,9 @@ export default async function GearIndex() {
               description: p.description,
               tags: p.tags,
               cover: p.leadImage || p.cover,
-              category: p.category,
-              price: p.price,
-              buyUrl: p.buyUrl,
-              merchant: p.merchant,
-              rating: p.rating,
             }))}
             initial={site.feed.initial}
             step={site.feed.step}
-            layout="stream"
           />
         )}
       </div>

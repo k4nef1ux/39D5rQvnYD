@@ -1,5 +1,5 @@
-// app/notes/page.tsx - field notes index. All type:note posts, newest first,
-// in the main column beside the shared sidebar.
+// app/allfinds/page.tsx - the "all finds" index: every gift product, newest
+// first, in the vitrine stream beside the shared sidebar.
 import type { Metadata } from "next";
 import {
   getPostsByType,
@@ -13,14 +13,14 @@ import InfiniteFeed from "@/components/InfiniteFeed";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "field notes on ai, income, and owning your work",
-  description: "gift guides and roundups from findshq - the best finds gathered by who they are for and the occasion. hand-picked, no filler.",
-  alternates: { canonical: "/notes" },
+  title: "all the finds",
+  description: "every find in one place, newest first - hand-picked gifts for her, for him, for mom, for dad, and every occasion, each vetted against real owner reviews.",
+  alternates: { canonical: "/allfinds" },
 };
 
-export default async function NotesIndex() {
+export default async function GearIndex() {
   const [posts, featured, latest, tags] = await Promise.all([
-    getPostsByType("note"),
+    getPostsByType("gift"),
     getFeaturedPosts(site.sidebar.topCount),
     getLatestPosts(site.sidebar.latestCount),
     getAllTags(),
@@ -33,14 +33,14 @@ export default async function NotesIndex() {
   return (
     <div className="layout layout-index">
       <div className="layout-main">
-        <div className="page-tag">findshq &nbsp;//&nbsp; notes</div>
-        <h1 className="page-title">field notes</h1>
+        <div className="page-tag">findshq &nbsp;//&nbsp; finds</div>
+        <h1 className="page-title">#all finds</h1>
         <p className="lede page-lede">
-          patterns in tech, the web, and the machines - read before the room
-          catches up.
+          every find, newest first. each one picked slowly and vetted before
+          it earned a place here.
         </p>
         {posts.length === 0 ? (
-          <p className="card-desc">no signal yet.</p>
+          <p className="card-desc">no finds yet.</p>
         ) : (
           <InfiniteFeed
             posts={posts.map((p) => ({
@@ -52,9 +52,15 @@ export default async function NotesIndex() {
               description: p.description,
               tags: p.tags,
               cover: p.leadImage || p.cover,
+              category: p.category,
+              price: p.price,
+              buyUrl: p.buyUrl,
+              merchant: p.merchant,
+              rating: p.rating,
             }))}
             initial={site.feed.initial}
             step={site.feed.step}
+            layout="stream"
           />
         )}
       </div>

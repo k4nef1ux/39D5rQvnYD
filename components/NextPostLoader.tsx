@@ -7,6 +7,7 @@
 // PostNav prev/next links remain the fallback.
 
 import Link from "next/link";
+import { displayType } from "@/lib/kind";
 import { Fragment, useEffect, useRef, useState, type ReactNode } from "react";
 import { fmtDate } from "@/components/PostCard";
 import Engage from "@/components/Engage";
@@ -72,7 +73,7 @@ export default function NextPostLoader({
             <Link href={`/${p.slug}`}>{p.title}</Link>
           </h2>
           <div className="post-meta">
-            <span>{p.type}</span>
+            <span>{displayType(p.type)}</span>
             {p.date && <span className="dot">·</span>}
             {p.date && <span>{fmtDate(p.date)}</span>}
           </div>

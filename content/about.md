@@ -4,7 +4,7 @@ seoTitle: "about findshq - how we pick the gifts we show"
 slug: about
 type: page
 nav: true
-order: 9
+order: 11
 date: 2026-06-01
 description: "findshq is a curated gift index - a short list of things worth giving, sorted by who they are for and the occasion, each vetted before it earns a place."
 ---
