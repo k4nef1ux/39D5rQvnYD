@@ -172,10 +172,30 @@ if (warnings.length) {
   console.log(`\nseo-check: ${warnings.length} warning(s)`);
   console.log(warnings.join("\n"));
 }
+// ---- sitewide UI sweep: the no-dash/no-emoji rule applies to EVERYTHING a
+// visitor can read, not just content markdown. Scan the source that renders
+// (app/, components/, config/, lib/) so a stray em dash in a component string
+// can never ship. Scans by code point; this file itself is excluded.
+const UI_DIRS = ["app", "components", "config", "lib"];
+const walk = (dir) =>
+  fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+    const p = `${dir}/${e.name}`;
+    if (e.isDirectory()) return walk(p);
+    return /\.(tsx?|mjs|css)$/.test(e.name) ? [p] : [];
+  });
+for (const dir of UI_DIRS) {
+  if (!fs.existsSync(dir)) continue;
+  for (const p of walk(dir)) {
+    const src = fs.readFileSync(p, "utf8");
+    if (EM_EN_DASH.test(src)) err(p, "contains an em/en dash - use a hyphen (rule applies to UI strings too)");
+    if (EMOJI.test(src)) err(p, "contains an emoji - none allowed (rule applies to UI too)");
+  }
+}
+
 if (errors.length) {
   console.log(`\nseo-check: ${errors.length} error(s)`);
   console.log(errors.join("\n"));
   console.log("\nfix the errors above (see SEO.md for the rules), then re-run `npm run seo-check`.\n");
   process.exit(1);
 }
-console.log(`\nseo-check: clean. ${files.length} content files pass title/description/alt/brand/tag-hub checks.\n`);
+console.log(`\nseo-check: clean. ${files.length} content files + the app/component source pass title/description/alt/brand/tag-hub checks.\n`);
