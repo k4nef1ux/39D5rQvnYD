@@ -19,9 +19,15 @@ findshq shares opinions and recommendations about gifts and finds. The content i
 
 We link out to stores and products, and some of those links are affiliate links. Prices, availability, and product details are set by the retailer and can change at any time, so always confirm the current details on their page before you buy.
 
-## no guarantees
+## no guarantees, no professional advice
 
 We choose gifts we genuinely like, but we cannot promise a product will be perfect for your situation. Recommendations are our honest opinion, not a guarantee of quality, fit, or outcome. Use your own judgment before purchasing.
+
+Everything on findshq is general information and opinion - it is not professional, financial, medical, safety, or legal advice. If a gift touches on health or safety (sleep products, anything for kids, anything you eat or plug in), check the manufacturer's guidance and the retailer's product page before you buy.
+
+## liability
+
+findshq is provided "as is". To the extent the law allows, we are not liable for losses arising from using the site or relying on its content. The products we link to are made, sold, and warranted by their retailers and manufacturers - an issue with an order, a product, or a warranty is between you and them, under their terms.
 
 ## content and use
 

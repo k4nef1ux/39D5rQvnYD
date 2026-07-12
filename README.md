@@ -15,7 +15,7 @@ steps see **HANDOVER.md**.
 
 ## setup
 ```bash
-git clone git@github.com:k4nef1ux/39D5rQvnYD.git
+git clone <this repo's git url>
 cd 39D5rQvnYD
 npm install
 ```

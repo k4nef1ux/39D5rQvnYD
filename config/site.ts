@@ -31,7 +31,7 @@ export type SiteConfig = {
   locale: string;
   // analytics - GA4 measurement id + Microsoft Clarity project id + Ahrefs Web
   // Analytics data-key (empty disables each). Blank until findshq has its OWN
-  // properties - never inherit q1rk's ids.
+  // properties - never inherit the parent site's ids.
   analytics: { gaId: string; clarityId: string; ahrefsKey: string };
   // --- identity copy: edit here to reshape what the site is about ---
   // headline shown on the default social/OG share card
@@ -59,7 +59,7 @@ export const site: SiteConfig = {
   feed: { initial: 8, step: 8 },
   author: "findshq",
   locale: "en_US",
-  // blank - findshq gets its own analytics properties later. do NOT paste q1rk's.
+  // blank - findshq gets its own analytics properties later. do NOT paste the parent site's.
   analytics: { gaId: "", clarityId: "", ahrefsKey: "" },
   ogHeadline: { lead: "gifts worth", accent: "giving." },
   llmsIntro:

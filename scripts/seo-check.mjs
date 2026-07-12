@@ -47,11 +47,16 @@ const warnings = [];
 const err = (file, msg) => errors.push(`  ${file}: ${msg}`);
 const warn = (file, msg) => warnings.push(`  ${file}: ${msg}`);
 
+// foreign brand names (the parent/sibling sites) must never appear in this
+// repo - site, code, comments, or docs (owner rule, jul 2026). The pattern is
+// assembled from fragments so this file itself stays token-free.
+const FOREIGN_BRANDS = new RegExp(["q1" + "rk", "k4" + "ne", "um" + "xwu"].join("|"), "i");
+const ROOT_DOCS = ["CLAUDE.md", "HANDOVER.md", "README.md", "SEO.md", "EDITING.md"];
 const EM_EN_DASH = /[—–]/; // em dash or en dash (by code point, so this file stays glyph-free)
 const EMOJI = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FE0F}\u{1F1E6}-\u{1F1FF}]/u;
 const EMPTY_ALT_IMG = /!\[\s*\]\(/; // markdown image with empty alt
 // brand-banned words (claim-words that read as a tell). edit this list per clone.
-// findshq's warm gift-guide voice has none for now (q1rk's "honest" ban was
+// findshq's gift-guide voice has none for now (the parent blog's claim-word ban was
 // specific to that brand and would false-positive on normal gift copy).
 const BANNED_WORDS = [];
 const scanBanned = (file, text) => {
@@ -111,6 +116,7 @@ for (const file of files) {
   // brand rules
   if (EM_EN_DASH.test(raw)) err(file, "contains an em/en dash - use a hyphen");
   if (EMOJI.test(raw)) err(file, "contains an emoji - none allowed");
+  if (FOREIGN_BRANDS.test(raw)) err(file, "mentions a foreign brand name - keep sibling-site names out of this repo");
   scanBanned(file, raw);
 
   // external/affiliate link policy: affiliate-domain links must be bare unless approved
@@ -189,7 +195,13 @@ for (const dir of UI_DIRS) {
     const src = fs.readFileSync(p, "utf8");
     if (EM_EN_DASH.test(src)) err(p, "contains an em/en dash - use a hyphen (rule applies to UI strings too)");
     if (EMOJI.test(src)) err(p, "contains an emoji - none allowed (rule applies to UI too)");
+    if (FOREIGN_BRANDS.test(src)) err(p, "mentions a foreign brand name - keep sibling-site names out of this repo");
   }
+}
+
+for (const p of ROOT_DOCS) {
+  if (!fs.existsSync(p)) continue;
+  if (FOREIGN_BRANDS.test(fs.readFileSync(p, "utf8"))) err(p, "mentions a foreign brand name - keep sibling-site names out of this repo");
 }
 
 if (errors.length) {

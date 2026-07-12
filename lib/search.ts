@@ -29,7 +29,7 @@ export async function getSearchIndex(): Promise<SearchDoc[]> {
   const pages = await getAllPages();
   return pages
     // gifts are the catalog - they MUST be findable (this filter arrived from
-    // q1rk where posts were log/note; excluding "gift" made every product
+    // the parent blog where posts were log/note; excluding "gift" made every product
     // invisible to search, the palette, and the R random-post key)
     .filter((p) => p.type === "log" || p.type === "note" || p.type === "gear" || p.type === "gift")
     .map((p) => {

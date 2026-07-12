@@ -19,23 +19,25 @@ dress). The recurring signature is **"the plaque"** - a gold-hairline-topped
 bar with the serif title left and the champagne mono price right - on the hero
 feature, every stream card, and the gift page's buy bar.
 
-findshq was **cloned from a sibling site, q1rk.com** (a dark matrix/terminal
-blog) and fully re-themed. It reuses q1rk's Next.js 15 App Router engine but is
-a **different brand**. When you see leftover q1rk naming (e.g. the css
+findshq was **cloned from a sibling blog site** (dark, terminal-flavored) and
+fully re-themed. It reuses the parent's Next.js 15 App Router engine but is
+a **different brand**. When you see leftover parent naming (e.g. the css
 token `--phos`, the `note` content type rendered as "guide"), treat it as a
 holdover from the clone, not intent. The index routes are findshq's own:
 `/allfinds` (every gift) and `/guides` (every roundup); `/gear` and `/notes`
 301 to them.
 
-Portfolio context: siblings are q1rk.com (blog), q1rkify.com (Shopify),
-umxwu.com (agency). **Git holds only the running site + seeded content** - keep
-it clean. See **HANDOVER.md** for current state.
+**Git holds only the running site + seeded content** - keep it clean. Brand
+names of sibling sites stay OUT of this repo (owner rule, jul 2026): no
+references to the parent blog or the agency by name, anywhere - site, code,
+comments, or docs. seo-check enforces it. See **HANDOVER.md** for current
+state.
 
 ## Stack & hosting
 - **Next.js 15 App Router**, TypeScript, React 19.
 - **Server mode** (`next start`) on **Hostinger** - NOT static export
   (`output:'export'` caused NoFallbackError on the parent). API routes work.
-- Git: `git@github.com:k4nef1ux/39D5rQvnYD.git`, branch **`main`** (default).
+- Git: this repo's `origin`, branch **`main`** (default).
   Working norm: build -> verify -> push straight to `main`. (The old "5 minute
   offers" static site that previously lived on main is gone; recoverable at
   commit `d19668c` if ever needed.)
@@ -59,8 +61,8 @@ it clean. See **HANDOVER.md** for current state.
   kills reader trust. Author-voiced curation with receipts, always.
 - Palette: cold obsidian `--void` (`#08080b`) ground, porcelain `--ink`, and a
   **champagne-metal accent `--phos` (`#d8b47f`)** with `--phos-soft/-deep/-ink`
-  companions. NOTE: the token is still named `--phos` (a holdover from q1rk's
-  phosphor green) - leave the name, change only values if retuning. Tokens live
+  companions. NOTE: the token is still named `--phos` (a holdover from the
+  parent's phosphor green) - leave the name, change only values if retuning. Tokens live
   in `app/globals.css :root`.
 - **The signature device: "the plaque."** Every product image is a vitrine
   (full-bleed image on a lit pedestal - a faint champagne floor-glow), and every
@@ -135,19 +137,19 @@ confirmed to allow it in a content/blog context, then allowlist it:
   code that isn't on the allowlist** - so a stray `?tag=` can't ship unapproved.
 - `lib/content.ts` auto-adds `target="_blank"` + `rel="sponsored noopener"` to
   affiliate-domain links so attribution is correct even on a bare link. NOTE:
-  the rel-injection regex in `content.ts` was inherited from q1rk and currently
+  the rel-injection regex in `content.ts` was inherited from the parent and currently
   matches the parent's affiliate domains - if outbound `buyUrl` retailers aren't
   getting `rel="sponsored"`, extend that regex to cover `amazon.com`/`amzn.*`
   (and keep the CSP + seo-check domain lists in sync).
 
 ## Performance is a hard requirement (keep Lighthouse mobile high)
-q1rk held ~99 mobile / 100 desktop; hold the same bar. Rules:
+The parent site held ~99 mobile / 100 desktop; hold the same bar. Rules:
 - Third-party / non-critical work loads **deferred / after paint**.
 - **GA4, Microsoft Clarity, Ahrefs** load via `next/script` `lazyOnload`, **and
   only after opt-in consent** (`components/Analytics.tsx`, gated on
   `lib/consent`). Ids live in `config/site.ts analytics` and are **BLANK** for
   findshq until it has its OWN GA4/Clarity/Ahrefs properties - **never inherit
-  q1rk's ids**. Empty id disables each tag (costs the budget nothing). New
+  the parent site's ids**. Empty id disables each tag (costs the budget nothing). New
   third-party tag -> also extend the CSP in `next.config.mjs`.
 - The newsletter (Hostinger Reach) is a same-origin iframe, lazy-loaded on
   scroll so it stays out of the audit.
@@ -248,7 +250,7 @@ q1rk held ~99 mobile / 100 desktop; hold the same bar. Rules:
   `lib/consent.ts` - consent-gated analytics loading.
 - `components/ReachSignup.tsx` - lazy same-origin newsletter iframe. FORM_URL
   is BLANK (renders nothing) until findshq has its own Hostinger Reach form -
-  never reuse q1rk's form id (signups would land in the wrong list).
+  never reuse the parent site's form id (signups would land in the wrong list).
 
 ## Working agreements
 - Confirm before anything irreversible. Norm: change -> build -> verify -> push

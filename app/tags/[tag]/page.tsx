@@ -72,7 +72,7 @@ export default async function TagArchive({
   const rightTag = tn > 1 ? allTags[(ti + 1) % tn] : null;
 
   // lane tags (the ones in the top nav) are cycled by KeyboardNav in the
-  // layout, like q1rk's sections; mounting the adjacent-tag arrows here too
+  // layout, like the parent blog's sections; mounting the adjacent-tag arrows here too
   // made both handlers fire on one keypress and the tag one won the race.
   // Non-lane tags keep the adjacent-tag arrows.
   const isLane = site.nav.some((i) => i.href === `/tags/${tag}`);

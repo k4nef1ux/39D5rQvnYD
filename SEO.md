@@ -1,4 +1,4 @@
-# SEO.md - the on-page SEO + audit playbook (q1rk template)
+# SEO.md - the on-page SEO + audit playbook (parent-site template)
 
 This site is a **template meant to be cloned** for sibling projects. This doc is
 the single source of truth for the SEO conventions baked into the code, so a
@@ -137,7 +137,7 @@ When you replicate this template for a new site, do all of these, then run
    IndexNow key file in `public/<key>.txt` (filename + contents = the key).
 3. **`next.config.mjs`** - update the `www -> apex` redirect host value, the CSP
    if you add third-party tags, and remove the old slug-rename 301s (they're
-   q1rk-specific).
+   parent-specific).
 4. **`lib/tag-meta.ts`** - rewrite `TAG_META` + `TAG_BLURB2` for the tags this
    site actually uses. `seo-check` fails until every post tag has hub copy.
 5. **content** - each post: `title` <= 53, `description` 120-160, real alt text

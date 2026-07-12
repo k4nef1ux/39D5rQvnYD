@@ -4,7 +4,7 @@
    Fraunces light carries the display voice; IBM Plex Mono set small, uppercase
    and letterspaced reads as engraved spec plates. Product images are the
    surface; everything else stays quiet. Engine + perf rules inherited from the
-   q1rk clone (static CSS only, composited effects, reduced-motion gated). */
+   parent-site clone (static CSS only, composited effects, reduced-motion gated). */
 
 :root {
   --void: #08080b;          /* cold obsidian background */

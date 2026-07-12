@@ -1,6 +1,6 @@
 # EDITING.md - the craft standard
 
-The bar a q1rk post must clear as WRITING - separate from SEO.md (search
+The bar a post on this site must clear as WRITING - separate from SEO.md (search
 rules) and the brand voice rules in CLAUDE.md, which all still apply. This
 file exists because a first draft is never the article: the owner caught
 "momentum tonight matters more than perfection tonight" in a published post.
@@ -111,7 +111,7 @@ about anyway. Rules:
 - **Structure follows the argument**, not the utility skeleton: no
   "your hour" checklist, faq optional, 0-2 .vz blocks. The one-hour bar
   does not apply; the stranger test and the source rules still do.
-- **q1rk is never the subject.** The doctrine (documentation over
+- **the site is never the subject.** The doctrine (documentation over
   description) is advice for the READER's work. The site does not write
   about itself, its experiment, its numbers, or its tooling.
 - The countable rules still run (`npm run style-check`), and a

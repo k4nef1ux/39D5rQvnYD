@@ -13,9 +13,10 @@ affiliate rules in CLAUDE.md).
 
 ## current state (v2 - the showroom)
 - **v2 rebuild, now on `main` (default branch)**: re-cloned
-  from the CURRENT q1rk engine (picks up the OG/twitter PNG card routes, nav
-  dropdown, style-check, vz article visuals), the commerce layer ported from
-  the v1 scaffold (recoverable at commit `bc5b6c0`), then fully re-themed.
+  from the parent blog's CURRENT engine (picks up the OG/twitter PNG card
+  routes, nav dropdown, style-check, vz article visuals), the commerce layer
+  ported from the v1 scaffold (recoverable at commit `bc5b6c0`), then fully
+  re-themed.
 - **Theme: modern futuristic ultra-wealthy minimalist.** Cold obsidian
   `--void #08080b`, porcelain `--ink`, champagne-metal accent `--phos #d8b47f`.
   The feed is ONE column of large vitrine cards (image full-bleed on a lit
@@ -30,7 +31,7 @@ affiliate rules in CLAUDE.md).
   `/public/images/<slug>/cover.webp`. REPLACE the placeholder buyUrls with real
   product links before promoting any page.
 - `lib/tag-meta.ts` covers all 31 content tags (seo-check enforces coverage).
-- Analytics ids **blank** (never inherit q1rk's); newsletter FORM_URL **blank**
+- Analytics ids **blank** (never inherit the parent site's); newsletter FORM_URL **blank**
   (create findshq's own Reach form); IndexNow key not configured yet.
 
 ## content voice (see CLAUDE.md for the full policy)
@@ -63,4 +64,4 @@ is the strongest version and Google's reviews system rewards it.**
    ship bare (seo-check blocks unapproved referral codes).
 5. Content engine: gift guides (`note` type) targeting long-tail gift queries;
    Q4 is the season - pages need to be indexed by september.
-6. Throttled Lighthouse pass on the deployed host (hold q1rk's ~99 mobile bar).
+6. Throttled Lighthouse pass on the deployed host (hold the parent's ~99 mobile bar).

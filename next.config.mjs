@@ -44,7 +44,7 @@ const nextConfig = {
         destination: "https://findshq.com/:path*",
         statusCode: 301,
       },
-      // index routes renamed from the q1rk clone's names to findshq's own -
+      // index routes renamed from the parent clone's names to findshq's own -
       // 301 the old paths so typed links and any early crawls land right.
       { source: "/gear", destination: "/allfinds", permanent: true },
       { source: "/notes", destination: "/guides", permanent: true },

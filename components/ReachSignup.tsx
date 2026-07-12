@@ -12,7 +12,7 @@
 import { useEffect, useRef, useState } from "react";
 
 // BLANK until findshq has its OWN Reach form (create it in Hostinger Reach,
-// paste the hosted-form URL here). Never reuse q1rk's form id - signups would
+// paste the hosted-form URL here). Never reuse the parent site's form id - signups would
 // land in the wrong list. Empty string = the section doesn't render at all.
 const FORM_URL = "";
 
