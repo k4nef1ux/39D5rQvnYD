@@ -31,8 +31,10 @@ affiliate rules in CLAUDE.md).
   `/public/images/<slug>/cover.webp`. REPLACE the placeholder buyUrls with real
   product links before promoting any page.
 - `lib/tag-meta.ts` covers all 31 content tags (seo-check enforces coverage).
-- Analytics ids **blank** (never inherit the parent site's); newsletter FORM_URL **blank**
-  (create findshq's own Reach form); IndexNow key not configured yet.
+- GA4 is LIVE: findshq's own property (`G-5XQ3Z6NZQ2` in `config/site.ts`),
+  loaded consent-gated + lazyOnload (zero cost before opt-in). Clarity/Ahrefs
+  ids still blank; newsletter FORM_URL blank (create findshq's own Reach
+  form); IndexNow key not configured yet.
 
 ## content voice (see CLAUDE.md for the full policy)
 Quiet confidence, plain english, lowercase, hyphens only, no emoji. Reviews
@@ -59,7 +61,7 @@ is the strongest version and Google's reviews system rewards it.**
 2. Hostinger: point findshq.com at this repo (branch merge -> auto-deploy),
    set `UPSTASH_REDIS_REST_URL/TOKEN` env vars, create the Reach form, add an
    IndexNow key.
-3. Own analytics properties (GA4/Clarity/Ahrefs) -> `config/site.ts`.
+3. Remaining analytics properties (Clarity + Ahrefs) -> `config/site.ts`.
 4. Amazon associates: apply once the site has content; until approved, links
    ship bare (seo-check blocks unapproved referral codes).
 5. Content engine: gift guides (`note` type) targeting long-tail gift queries;

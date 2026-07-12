@@ -59,8 +59,9 @@ export const site: SiteConfig = {
   feed: { initial: 8, step: 8 },
   author: "findshq",
   locale: "en_US",
-  // blank - findshq gets its own analytics properties later. do NOT paste the parent site's.
-  analytics: { gaId: "", clarityId: "", ahrefsKey: "" },
+  // findshq's OWN GA4 property (set jul 2026). Clarity/Ahrefs still pending
+  // their own ids - blank disables each. Never paste the parent site's.
+  analytics: { gaId: "G-5XQ3Z6NZQ2", clarityId: "", ahrefsKey: "" },
   ogHeadline: { lead: "gifts worth", accent: "giving." },
   llmsIntro:
     "Hand-picked gifts, vetted against real owner reviews. A gift for her, for him, for mom, for dad, and every occasion.",
