@@ -53,6 +53,13 @@ reviews, complaints-first) because no products have actually been bought -
 firsthand claims ("bought it ourselves", real photos, real measurements) - that
 is the strongest version and Google's reviews system rewards it.**
 
+## preview environment
+The `preview` branch is Vercel's preview environment: push there to get a
+build on the stable preview alias (39-d5r-qvn-yd-git-preview-*.vercel.app)
+without touching production. Flow for risky changes: branch/commit ->
+push to `preview` -> check the preview URL -> merge/push `main`. Keep
+`preview` fast-forwarded to `main` after merging so the two never drift.
+
 ## next steps (in rough order)
 1. Real products: swap the 10 placeholder buyUrls for real retailer links,
    re-verify prices/ratings against live listings, regenerate/replace covers
